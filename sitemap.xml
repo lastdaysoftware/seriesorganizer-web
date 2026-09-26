@@ -32,4 +32,10 @@
     <loc>https://seriesorganizer.com/pt/support.html</loc>
     <lastmod>2026-09-15</lastmod>
   </url>
+  <!-- NEWS:START -->
+  <url>
+    <loc>https://seriesorganizer.com/news/</loc>
+    <lastmod>2026-09-26</lastmod>
+  </url>
+  <!-- NEWS:END -->
 </urlset>
