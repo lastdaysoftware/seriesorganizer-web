@@ -5,5 +5,12 @@
     <link>https://seriesorganizer.com/news/</link>
     <description>News and development updates from Series Organizer+.</description>
     <language>en</language>
+    <item>
+      <title>Series Organizer+ 1.0.0 is here for Windows</title>
+      <link>https://seriesorganizer.com/news/posts/series-organizer-plus-windows-launch.html</link>
+      <guid isPermaLink="true">https://seriesorganizer.com/news/posts/series-organizer-plus-windows-launch.html</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <description>The first public desktop release is here, bringing your movies and TV together with tracking, discovery, release feeds and more.</description>
+    </item>
   </channel>
 </rss>
