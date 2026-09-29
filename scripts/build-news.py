@@ -143,7 +143,7 @@ def header(prefix: str = "../") -> str:
       <a href="{prefix}index.html#discover">Discover</a>
       <a href="{prefix}news/">News</a>
       <a href="{prefix}index.html#legacy">Our story</a>
-      <a href="{prefix}index.html#development">Development</a>
+      <a href="{prefix}index.html#development">What's next</a>
     </nav>
     <nav class="footer-links" aria-label="Language"><span><strong>EN</strong> | <a href="{prefix}pt/">PT</a></span></nav>
   </div>
