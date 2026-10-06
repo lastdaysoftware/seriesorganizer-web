@@ -2,7 +2,7 @@
 """Build the static Series Organizer+ News pages and RSS feed.
 
 No third-party packages are required. The intentionally small Markdown subset supports
-paragraphs, ##/### headings, unordered lists, **bold**, *emphasis*, and [links](url).
+paragraphs, ##/### headings, unordered lists, **bold**, *emphasis*, and HTTP(S)/mailto links.
 """
 from __future__ import annotations
 
@@ -63,7 +63,7 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
 
 def inline_markup(text: str) -> str:
     text = escape(text, quote=False)
-    text = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2">\1</a>', text)
+    text = re.sub(r"\[([^\]]+)\]\(((?:https?://|mailto:)[^)]+)\)", r'<a href="\2">\1</a>', text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", text)
     return text

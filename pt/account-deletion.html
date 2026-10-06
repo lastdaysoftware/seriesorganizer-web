@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="../styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="../feed.xml" />
   <title>Eliminação da Conta — Series Organizer+</title>
-  <meta name="description" content="Como solicitar a eliminação de uma conta cloud Series Organizer+ e dos respetivos Cloud Backups." />
+  <meta name="description" content="Como eliminar a conta cloud Series Organizer+, Cloud Backups e dados de sincronização, na aplicação ou por email." />
   <link rel="canonical" href="https://seriesorganizer.com/pt/account-deletion.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/account-deletion.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/account-deletion.html" />
@@ -41,6 +41,7 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">CONTA</p>
       <h1>Eliminar a tua conta Series Organizer+</h1>
+      <p class="policy-updated">Última atualização: 6 de outubro de 2026</p>
 
       <p>
         Series Organizer+ é desenvolvido pela LastDay Software. Esta página é o processo público na Web
@@ -52,10 +53,11 @@
         <ul>
           <li>A tua conta de autenticação Supabase do Series Organizer+</li>
           <li>Os snapshots de Cloud Backup Series Organizer+ associados</li>
+          <li>Os registos cloud de sincronização e o histórico de alterações/operações associados</li>
         </ul>
         <p>
-          Os snapshots de Cloud Backup são eliminados em cascata quando a conta de autenticação
-          associada é eliminada.
+          Os Cloud Backups e os dados de sincronização são eliminados com a conta de autenticação
+          associada. Isto inclui o conteúdo da Biblioteca e os dados de acompanhamento guardados na cloud.
         </p>
       </section>
 
@@ -65,9 +67,31 @@
           Eliminar a tua conta Series Organizer+ não elimina a tua Conta Google.
         </p>
         <p>
-          Os dados locais de convidado, Biblioteca e acompanhamento podem permanecer nos dispositivos até
-          limpares o armazenamento local da aplicação ou a desinstalares. Isto permite que a aplicação
-          local-first continue utilizável sem uma conta cloud.
+          Eliminar a conta cloud não apaga remotamente os dados dos teus dispositivos.
+          A eliminação na aplicação permite manter os dados do perfil associado como dados de
+          convidado ou eliminar os dados locais desse perfil no dispositivo atual. Outros
+          dispositivos e perfis de convidado não relacionados não são apagados. As cópias locais
+          permanecem até as removeres pela aplicação, pelos controlos de armazenamento do
+          dispositivo ou pela desinstalação.
+        </p>
+        <p>
+          O Firebase Analytics opcional utiliza um identificador da instância da aplicação,
+          não o identificador da tua conta cloud. Eliminar a conta cloud não elimina, por si só,
+          analytics recolhidos anteriormente. Para questões de privacidade ou um pedido separado
+          de eliminação de dados, contacta
+          <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>.
+          Nunca envies palavras-passe nem tokens de autenticação.
+        </p>
+      </section>
+
+      <section>
+        <h2>Eliminar a conta na aplicação</h2>
+        <p>
+          Com sessão iniciada, abre Perfil &gt; Conta e sincronização e escolhe Eliminar conta.
+          Revê se pretendes manter os dados associados deste dispositivo como dados de convidado
+          ou eliminá-los e confirma a eliminação permanente. A conta cloud é eliminada primeiro;
+          uma falha remota não elimina a Biblioteca local. Se a aplicação pedir que concluas
+          a limpeza local depois, utiliza a ação de nova tentativa para concluir a opção já escolhida.
         </p>
       </section>
 
@@ -77,7 +101,8 @@
           Envia um email a partir do endereço Google utilizado para iniciar sessão no Series Organizer+ para
           <a href="mailto:privacy@seriesorganizer.com?subject=Pedido%20de%20elimina%C3%A7%C3%A3o%20da%20conta%20Series%20Organizer%2B">privacy@seriesorganizer.com</a>
           com o assunto “Pedido de eliminação da conta Series Organizer+”. Indica claramente que
-          pretendes eliminar a conta cloud Series Organizer+ e os respetivos Cloud Backups.
+          pretendes eliminar a conta cloud Series Organizer+, os respetivos Cloud Backups e
+          dados de sincronização. Não precisas de instalar a aplicação nem de iniciar sessão neste site.
         </p>
       </section>
 
@@ -101,7 +126,7 @@
         <p>
           Os pedidos por email verificados serão concluídos no prazo de 30 dias de calendário. O requerente
           receberá confirmação no endereço de email utilizado no pedido após a
-          conta e os Cloud Backups associados terem sido eliminados.
+          conta, os Cloud Backups e os dados de sincronização associados terem sido eliminados.
         </p>
       </section>
 

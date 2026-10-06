@@ -6,11 +6,11 @@
   </url>
   <url>
     <loc>https://seriesorganizer.com/privacy.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/account-deletion.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/support.html</loc>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>https://seriesorganizer.com/pt/privacy.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/pt/account-deletion.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/pt/support.html</loc>
@@ -35,7 +35,11 @@
   <!-- NEWS:START -->
   <url>
     <loc>https://seriesorganizer.com/news/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/news/posts/help-test-series-organizer-plus.html</loc>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/news/posts/series-organizer-plus-1-1-0.html</loc>

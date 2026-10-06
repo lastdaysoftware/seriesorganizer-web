@@ -41,7 +41,7 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACY</p>
       <h1>Privacy Policy</h1>
-      <p class="policy-updated">Last updated: September 14, 2026</p>
+      <p class="policy-updated">Last updated: October 6, 2026</p>
 
       <section>
         <h2>About this policy</h2>
@@ -58,6 +58,7 @@
           <li>Library membership</li>
           <li>Movie watch counts</li>
           <li>TV-show and episode tracking</li>
+          <li>Viewing activity, including viewing dates and rewatches</li>
           <li>Favorites and archived state</li>
           <li>User preferences</li>
           <li>Notification and synchronization preferences</li>
@@ -72,16 +73,46 @@
           authentication. An account is not required to use the local Library.
         </p>
         <p>
+          Google and Supabase provide basic account information, which may include your
+          name, email address and account identifiers, to authenticate you, display your
+          signed-in account and associate its cloud data. The app does not receive your
+          Google password. Signing in alone does not upload your Library.
+        </p>
+        <p>
           Authentication tokens are stored locally using Android Keystore-backed encryption
           and are excluded from Android backup.
         </p>
       </section>
 
       <section>
+        <h2>Optional account synchronization</h2>
+        <p>
+          Account sync is separate from Cloud Backup. After you explicitly activate it,
+          supported Library and tracking changes are sent to Supabase and received on
+          other devices linked to the same account. These records include title and
+          episode identifiers, Library membership, favorites, archived state, watched
+          state, viewing counts and dates, and per-show notification choices.
+        </p>
+        <p>
+          Sync also stores account identifiers and operation/revision information needed
+          to apply changes and retry safely. You can run sync manually or enable optional
+          scheduled checks when the app enters the foreground. It does not imply
+          continuous synchronization while the app is closed. Initial differences may
+          require your review before sync is enabled.
+        </p>
+        <p>
+          Disabling automatic checks stops those checks; it does not delete data already
+          stored in the cloud. TMDB metadata, artwork, authentication tokens and device-wide
+          preferences are not part of the Library records sent by account sync.
+        </p>
+      </section>
+
+      <section>
         <h2>Manual Cloud Backup</h2>
         <p>
-          Cloud Backup v1 is manual, not automatic. A backup is uploaded only when you
-          explicitly request one.
+          Cloud Backup is manual, not automatic. A backup is uploaded only when you
+          explicitly request one, including when you choose to link your device data to
+          an account with no backup. A backup is a recovery snapshot, not a completed sync.
         </p>
 
         <p>Cloud backups may contain:</p>
@@ -90,6 +121,7 @@
           <li>Movie tracking</li>
           <li>TV-show tracking</li>
           <li>Episode tracking</li>
+          <li>Viewing activity, including viewing dates and rewatches</li>
         </ul>
 
         <p>Cloud backups exclude:</p>
@@ -120,7 +152,7 @@
         <ul>
           <li>A pseudonymous app-instance identifier</li>
           <li>App lifecycle and session activity</li>
-          <li>Coarse geographical information</li>
+          <li>Approximate location inferred from the network IP address, not GPS</li>
           <li>Device/platform information</li>
           <li>Library movie and TV-show counts</li>
         </ul>
@@ -130,6 +162,40 @@
           email addresses, authentication tokens or watch-history records.
           Advertising identifiers and personalization are disabled.
         </p>
+        <p>
+          You can turn analytics off in Profile &gt; About &gt; Privacy. This stops future
+          analytics collection; it does not itself erase information collected earlier.
+          Analytics uses an app-instance identifier, not your Series Organizer+ account ID.
+        </p>
+      </section>
+
+      <section>
+        <h2>Metadata searches and requests</h2>
+        <p>
+          Searching, browsing, opening details and refreshing metadata send the relevant
+          search text, title identifiers, language, region and filter parameters to TMDB.
+          Recommendation requests may use identifiers of titles in your Library or watch
+          history to fetch related suggestions. These requests are separate from Firebase
+          Analytics and do not include your Google password or authentication tokens.
+        </p>
+        <p>
+          Network providers receive connection information such as your IP address when
+          handling requests. TMDB supplies streaming-availability metadata with JustWatch
+          attribution. Opening an external provider or video link takes you to that
+          service, whose own privacy policy applies.
+        </p>
+      </section>
+
+      <section>
+        <h2>Diagnostics and support</h2>
+        <p>
+          The app keeps small, rotating diagnostic logs on your device for troubleshooting.
+          Logs are designed to redact credentials, email addresses and account/profile
+          identifiers. They are not uploaded automatically. If you choose to export and
+          share a log or contact support, we receive the information you send; review it
+          before sharing. Support correspondence is kept only as reasonably necessary to
+          handle and document your request.
+        </p>
       </section>
 
       <section>
@@ -137,7 +203,7 @@
         <ul>
           <li><strong>TMDB</strong> — movie, TV, episode, Person, artwork, video and provider metadata.</li>
           <li><strong>JustWatch</strong> — streaming-availability attribution supplied through TMDB.</li>
-          <li><strong>Supabase</strong> — optional Google authentication and cloud backup.</li>
+          <li><strong>Supabase</strong> — optional Google authentication, account sync and cloud backup.</li>
           <li><strong>Google OAuth</strong> — optional authentication.</li>
           <li><strong>Google / Firebase</strong> — optional analytics after user opt-in.</li>
         </ul>
@@ -160,8 +226,10 @@
         </p>
         <p>
           Cloud Backup retains at most the five newest immutable snapshots associated with
-          an account. Deleting the Series Organizer+ Supabase authentication account
-          cascade-deletes its cloud backup snapshots.
+          an account. Account sync records and its change/operation history are separate
+          from those five snapshots and remain associated with the account until deletion.
+          Deleting the Series Organizer+ cloud account removes its associated cloud backups
+          and account-sync data. Signing out or stopping automatic sync does not delete them.
         </p>
       </section>
 
@@ -170,9 +238,10 @@
         <ul>
           <li>Use Series Organizer+ without signing in.</li>
           <li>Choose whether to create a manual cloud backup.</li>
+          <li>Choose whether to activate account sync and enable automatic sync checks.</li>
           <li>Choose whether optional Firebase Analytics is enabled.</li>
           <li>Sign out of your Google-linked Series Organizer+ account.</li>
-          <li>Request deletion of your Series Organizer+ cloud account and backups.</li>
+          <li>Delete your Series Organizer+ cloud account, backups and account-sync data.</li>
         </ul>
       </section>
 

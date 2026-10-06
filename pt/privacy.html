@@ -41,7 +41,7 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACIDADE</p>
       <h1>Política de Privacidade</h1>
-      <p class="policy-updated">Última atualização: 14 de setembro de 2026</p>
+      <p class="policy-updated">Última atualização: 6 de outubro de 2026</p>
 
       <section>
         <h2>Sobre esta política</h2>
@@ -58,6 +58,7 @@
           <li>Conteúdo da Biblioteca</li>
           <li>Contagem de visualizações de filmes</li>
           <li>Acompanhamento de séries e episódios</li>
+          <li>Atividade de visualização, incluindo datas e novas visualizações</li>
           <li>Favoritos e estado de arquivo</li>
           <li>Preferências do utilizador</li>
           <li>Preferências de notificações e sincronização</li>
@@ -72,16 +73,47 @@
           Supabase. Não é necessária uma conta para utilizar a Biblioteca local.
         </p>
         <p>
+          Google e Supabase fornecem informações básicas da conta, que podem incluir o teu
+          nome, endereço de email e identificadores da conta, para autenticação, apresentação
+          da conta com sessão iniciada e associação dos respetivos dados cloud. A aplicação
+          não recebe a tua palavra-passe Google. Iniciar sessão, por si só, não envia a Biblioteca.
+        </p>
+        <p>
           Os tokens de autenticação são guardados localmente com encriptação baseada no Android Keystore
           e são excluídos da cópia de segurança do Android.
         </p>
       </section>
 
       <section>
+        <h2>Sincronização opcional da conta</h2>
+        <p>
+          A sincronização da conta é distinta do Cloud Backup. Depois de a ativares explicitamente,
+          as alterações suportadas da Biblioteca e do acompanhamento são enviadas para Supabase e
+          recebidas noutros dispositivos associados à mesma conta. Estes registos incluem
+          identificadores de títulos e episódios, conteúdo da Biblioteca, favoritos, estado de
+          arquivo, estado de visualização, contagens e datas de visualização e opções de
+          notificações por série.
+        </p>
+        <p>
+          A sincronização também guarda identificadores da conta e informações sobre operações
+          e revisões, necessárias para aplicar alterações e repetir tentativas em segurança.
+          Podes sincronizar manualmente ou ativar verificações agendadas opcionais quando a
+          aplicação passa para primeiro plano. Isto não implica sincronização contínua com a
+          aplicação fechada. As diferenças iniciais podem exigir a tua revisão antes da ativação.
+        </p>
+        <p>
+          Desativar as verificações automáticas interrompe essas verificações; não elimina dados
+          já guardados na cloud. Metadados TMDB, imagens, tokens de autenticação e preferências
+          gerais do dispositivo não fazem parte dos registos da Biblioteca enviados pela sincronização.
+        </p>
+      </section>
+
+      <section>
         <h2>Cloud Backup manual</h2>
         <p>
-          Cloud Backup v1 é manual, não automático. Uma cópia só é enviada quando
-          a solicitas explicitamente.
+          Cloud Backup é manual, não automático. Uma cópia só é enviada quando a solicitas
+          explicitamente, incluindo quando escolhes associar os dados do dispositivo a uma
+          conta sem backup. Uma cópia é um snapshot de recuperação, não uma sincronização concluída.
         </p>
 
         <p>Os Cloud Backups podem conter:</p>
@@ -90,6 +122,7 @@
           <li>Acompanhamento de filmes</li>
           <li>Acompanhamento de séries</li>
           <li>Acompanhamento de episódios</li>
+          <li>Atividade de visualização, incluindo datas e novas visualizações</li>
         </ul>
 
         <p>Os Cloud Backups excluem:</p>
@@ -120,7 +153,7 @@
         <ul>
           <li>Um identificador pseudónimo da instância da aplicação</li>
           <li>Atividade do ciclo de vida da aplicação e das sessões</li>
-          <li>Informação geográfica aproximada</li>
+          <li>Localização aproximada inferida do endereço IP da ligação, não de GPS</li>
           <li>Informação do dispositivo/plataforma</li>
           <li>Contagem de filmes e séries na Biblioteca</li>
         </ul>
@@ -130,6 +163,43 @@
           endereços de email, tokens de autenticação nem registos do histórico de visualização.
           Os identificadores de publicidade e a personalização estão desativados.
         </p>
+        <p>
+          Podes desativar analytics em Perfil &gt; Sobre &gt; Privacidade. Isto interrompe a
+          recolha futura; não elimina, por si só, informações recolhidas anteriormente.
+          Analytics utiliza um identificador da instância da aplicação, não o identificador
+          da tua conta Series Organizer+.
+        </p>
+      </section>
+
+      <section>
+        <h2>Pesquisas e pedidos de metadados</h2>
+        <p>
+          Pesquisar, explorar, abrir detalhes e atualizar metadados envia para TMDB o texto
+          de pesquisa, identificadores de títulos, idioma, região e filtros relevantes.
+          Os pedidos de recomendações podem utilizar identificadores de títulos da tua
+          Biblioteca ou histórico de visualização para obter sugestões relacionadas.
+          Estes pedidos são distintos do Firebase Analytics e não incluem a tua
+          palavra-passe Google nem tokens de autenticação.
+        </p>
+        <p>
+          Os serviços de rede recebem informações da ligação, como o endereço IP, ao
+          processar pedidos. TMDB fornece metadados de disponibilidade de streaming com
+          atribuição a JustWatch. Abrir uma ligação externa para um serviço ou vídeo
+          leva-te a esse serviço, ao qual se aplica a respetiva política de privacidade.
+        </p>
+      </section>
+
+      <section>
+        <h2>Diagnóstico e suporte</h2>
+        <p>
+          A aplicação mantém pequenos registos de diagnóstico rotativos no dispositivo
+          para resolver problemas. Estes registos são concebidos para ocultar credenciais,
+          endereços de email e identificadores de contas/perfis. Não são enviados automaticamente.
+          Se escolheres exportar e partilhar um registo ou contactar o suporte, recebemos
+          as informações que enviares; revê-as antes de partilhar. A correspondência de
+          suporte é conservada apenas pelo período razoavelmente necessário para tratar
+          e documentar o teu pedido.
+        </p>
       </section>
 
       <section>
@@ -137,7 +207,7 @@
         <ul>
           <li><strong>TMDB</strong> — metadados de filmes, TV, episódios, pessoas, imagens, vídeos e serviços.</li>
           <li><strong>JustWatch</strong> — atribuição de disponibilidade de streaming fornecida através do TMDB.</li>
-          <li><strong>Supabase</strong> — autenticação Google opcional e Cloud Backup.</li>
+          <li><strong>Supabase</strong> — autenticação Google opcional, sincronização da conta e Cloud Backup.</li>
           <li><strong>Google OAuth</strong> — autenticação opcional.</li>
           <li><strong>Google / Firebase</strong> — analytics opcionais após consentimento do utilizador.</li>
         </ul>
@@ -160,8 +230,10 @@
         </p>
         <p>
           Cloud Backup mantém, no máximo, os cinco snapshots imutáveis mais recentes associados
-          a uma conta. Eliminar a conta de autenticação Supabase do Series Organizer+
-          elimina também, em cascata, os respetivos snapshots de Cloud Backup.
+          a uma conta. Os registos de sincronização e o respetivo histórico de alterações/operações
+          são distintos desses cinco snapshots e permanecem associados à conta até à eliminação.
+          Eliminar a conta cloud Series Organizer+ remove os respetivos Cloud Backups e dados
+          de sincronização. Terminar sessão ou interromper a sincronização automática não os elimina.
         </p>
       </section>
 
@@ -170,9 +242,10 @@
         <ul>
           <li>Utilizar Series Organizer+ sem iniciar sessão.</li>
           <li>Escolher se pretendes criar um Cloud Backup manual.</li>
+          <li>Escolher se pretendes ativar a sincronização da conta e as verificações automáticas.</li>
           <li>Escolher se o Firebase Analytics opcional é ativado.</li>
           <li>Terminar sessão na tua conta Series Organizer+ associada ao Google.</li>
-          <li>Solicitar a eliminação da tua conta cloud Series Organizer+ e respetivos Cloud Backups.</li>
+          <li>Eliminar a tua conta cloud Series Organizer+, Cloud Backups e dados de sincronização.</li>
         </ul>
       </section>
 

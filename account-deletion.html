@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="feed.xml" />
   <title>Account Deletion — Series Organizer+</title>
-  <meta name="description" content="How to request deletion of a Series Organizer+ cloud account and cloud backups." />
+  <meta name="description" content="How to delete a Series Organizer+ cloud account, backups and sync data, in the app or by email." />
   <link rel="canonical" href="https://seriesorganizer.com/account-deletion.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/account-deletion.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/account-deletion.html" />
@@ -41,6 +41,7 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">ACCOUNT</p>
       <h1>Delete your Series Organizer+ account</h1>
+      <p class="policy-updated">Last updated: October 6, 2026</p>
 
       <p>
         Series Organizer+ is developed by LastDay Software. This page is the public web
@@ -52,10 +53,11 @@
         <ul>
           <li>Your Series Organizer+ Supabase authentication account</li>
           <li>Your associated Series Organizer+ cloud backup snapshots</li>
+          <li>Your associated cloud account-sync records and change/operation history</li>
         </ul>
         <p>
-          Cloud backup snapshots are cascade-deleted when the associated authentication
-          account is deleted.
+          Cloud backups and account-sync data are deleted with the associated authentication
+          account. This includes the Library membership and watch-tracking data stored in the cloud.
         </p>
       </section>
 
@@ -65,9 +67,29 @@
           Deleting your Series Organizer+ account does not delete your Google Account.
         </p>
         <p>
-          Device-local guest, Library and tracking data may remain on devices until you
-          clear the app's local storage or uninstall the app. This lets the local-first
-          application remain usable without a cloud account.
+          Deleting the cloud account does not remotely erase data from your devices.
+          In-app deletion lets you keep the linked profile's data as guest data or delete
+          that profile's local data on the current device. Other devices and unrelated guest
+          profiles are not erased. Local copies remain until you remove them through the app,
+          device storage controls or uninstallation.
+        </p>
+        <p>
+          Optional Firebase Analytics uses an app-instance identifier rather than your
+          cloud account ID. Deleting the cloud account does not itself erase previously
+          collected analytics. For privacy questions or a separate data-deletion request,
+          contact <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>.
+          Never send passwords or authentication tokens.
+        </p>
+      </section>
+
+      <section>
+        <h2>Delete your account in the app</h2>
+        <p>
+          While signed in, open Profile &gt; Account &amp; Sync and choose Delete account.
+          Review whether to keep this device's linked data as guest data or delete it,
+          then confirm permanent deletion. The cloud account is deleted first; a remote
+          failure does not delete your local Library. If the app asks you to finish local
+          cleanup afterwards, use its retry action to complete the choice you already made.
         </p>
       </section>
 
@@ -77,7 +99,8 @@
           Send an email from the Google address used to sign in to Series Organizer+ to
           <a href="mailto:privacy@seriesorganizer.com?subject=Series%20Organizer%2B%20account%20deletion%20request">privacy@seriesorganizer.com</a>
           with the subject “Series Organizer+ account deletion request.” State clearly that
-          you want the Series Organizer+ cloud account and its cloud backups deleted.
+          you want the Series Organizer+ cloud account, its cloud backups and account-sync
+          data deleted. You do not need to install the app or sign into this website.
         </p>
       </section>
 
@@ -101,7 +124,7 @@
         <p>
           Verified email requests will be completed within 30 calendar days. The requester
           will receive confirmation at the email address used for the request after the
-          account and associated cloud backups have been deleted.
+          account, associated cloud backups and account-sync data have been deleted.
         </p>
       </section>
 
