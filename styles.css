@@ -1324,6 +1324,65 @@ footer {
   margin-bottom: 18px;
 }
 
+.preview-shot-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+  gap: 36px 28px;
+  align-items: start;
+}
+.preview-shot { margin: 0; min-width: 0; }
+.preview-shot a { display: block; }
+.preview-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+.preview-phone { width: 100%; max-width: 360px; justify-self: center; }
+.preview-shot figcaption { padding: 12px 0; color: var(--muted); font-size: 0.95rem; }
+.preview-shot figcaption a { display: inline; }
+@media (max-width: 760px) {
+  .preview-shot-grid { grid-template-columns: 1fr; gap: 26px; }
+}
+
+.shot-caption {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.feature-shot a, .feature-stack > a, .device-card > a { display: block; }
+.feature-shot img, .feature-stack img { object-fit: contain; }
+.feature-stack .gallery-copy + a { border-top: 1px solid var(--border); }
+.gallery-grid { align-items: start; }
+.help-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; margin: 28px 0; }
+.policy-page .help-grid .help-card { margin: 0; min-width: 0; border: 1px solid var(--border); border-radius: 18px; padding: 28px; background: var(--surface); }
+.policy-page .help-card h2 { margin: 0 0 16px; font-size: 1.3rem; line-height: 1.35; }
+.policy-page .help-card p { margin: 0 0 18px; color: var(--muted); }
+.help-card > a { display: inline-block; }
+.help-card a, .help-article a { color: var(--orange-light); text-decoration: underline; text-underline-offset: 3px; }
+.help-notice { padding: 16px 20px; border-left: 3px solid var(--orange); background: var(--surface); }
+.help-article { overflow-wrap: anywhere; }
+.help-article table { width: 100%; border-collapse: collapse; }
+.help-article td, .help-article th { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }
+@media (max-width: 720px) { .help-grid { grid-template-columns: 1fr; } .policy-page .help-grid .help-card { padding: 24px; } }
+
+/* Browser Watching owns its action spacing; do not change other CTA buttons. */
+.browser-watching-actions { display: grid; justify-items: start; gap: 16px; margin-top: 24px; }
+.browser-watching-actions .button { display: inline-flex; align-items: center; justify-content: center; max-width: 100%; line-height: 1.45; text-align: center; }
+.browser-watching-actions > a:not(.button) { color: var(--orange-light); text-decoration: underline; text-underline-offset: 3px; }
+.browser-watch-shots { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr); gap: 28px; align-items: start; margin-top: 40px; }
+.browser-watch-shot { margin: 0; min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+.browser-watch-shot > a { display: block; }
+.browser-watch-shot img { display: block; width: 100%; height: auto; }
+.browser-popup-shot > a { max-width: 360px; margin: 24px auto 0; }
+.browser-watch-shot figcaption { padding: 20px 24px; color: var(--text-soft); }
+.browser-watch-shot strong { display: block; margin-bottom: 8px; color: var(--orange-light); }
+.browser-watch-shot ol { padding-left: 22px; margin: 16px 0 0; }
+.browser-watch-shot li + li { margin-top: 8px; }
+@media (max-width: 760px) { .browser-watch-shots { grid-template-columns: 1fr; } .browser-popup-shot > a { margin-top: 20px; } }
+
 .compact-list {
   margin-bottom: 20px;
 }
@@ -1495,6 +1554,7 @@ footer {
 .dual-shot-grid .shot-card,
 .dual-shot-grid-wide .shot-card {
   width: 100%;
+  margin: 0;
 }
 
 @media (max-width: 1080px) {

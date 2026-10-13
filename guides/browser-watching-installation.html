@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://seriesorganizer.com/guides/browser-watching-installation.html"><title>Install or update the bundled Browser Watching extension — Series Organizer+</title><style>:root{color-scheme:dark;--bg:#1e1e1e;--panel:#282828;--text:#f9f7f2;--muted:#c7c2bc;--accent:#ffae4d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:18px/1.65 "Segoe UI",Arial,sans-serif}
+main{max-width:1080px;margin:auto;padding:42px 52px 80px}h1{font-size:40px;line-height:1.2;letter-spacing:-.8px;margin:16px 0 24px}
+h2{font-size:28px;line-height:1.3;margin:58px 0 22px;border-top:1px solid #ffffff20;padding-top:28px;scroll-margin-top:25px}
+h3{font-size:23px;margin:34px 0 12px;scroll-margin-top:25px}p{margin:16px 0}li{margin:9px 0}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#ffcc91}a:focus-visible{outline:2px solid #ff8a00;outline-offset:5px}
+strong{color:#fff}code{font:15px/1.6 Consolas,monospace;background:#ffffff0b;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{white-space:pre-wrap}nav{background:var(--panel);border:1px solid #ffffff15;border-radius:10px;padding:22px 26px;margin:28px 0 36px}
+nav strong{display:block;font-size:19px}nav ul{display:grid;grid-template-columns:1fr 1fr;gap:5px 22px;padding:14px 0 0;list-style:none;margin:0}
+nav li{margin:0;font-size:16px}.image-link{display:block;width:fit-content;max-width:100%;margin:22px auto;text-decoration:none}
+img{display:block;max-width:100%;height:auto;border-radius:7px}.image-link img{box-shadow:0 8px 30px #0004}
+p:has(>em:only-child){color:var(--muted);font-size:16px;text-align:center;margin-top:10px}table{width:100%;border-collapse:collapse;margin:22px 0;font-size:17px}
+th,td{border:1px solid #ffffff25;text-align:left;vertical-align:top;padding:13px 15px}th{background:#33302c}td{background:#ffffff03}
+td .image-link{margin:0 auto;min-width:38px}td img{max-width:38px;border-radius:0;box-shadow:none}.table-wrap{overflow:auto}
+.footer{margin-top:55px;padding-top:22px;border-top:1px solid #ffffff20;color:var(--muted);font-size:15px}.kicker{font-size:14px;letter-spacing:1.5px;color:var(--accent)}
+@media(max-width:700px){main{padding:22px 20px 45px}body{font-size:17px}h1{font-size:30px}h2{font-size:25px}nav ul{grid-template-columns:1fr}th,td{padding:10px;font-size:15px}code{font-size:13px}}
+@media print{body{background:white;color:#222}main{max-width:none;padding:0}h1,h2,h3,strong{color:#111}nav{display:none}a{color:#333}.kicker{color:#555}th,td{background:white;border-color:#bbb}img{box-shadow:none}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><main><p><a href="../index.html">← Series Organizer+ website</a> · <a href="../help/">Help and guides</a></p><div class="kicker">SERIES ORGANIZER+ · WINDOWS DESKTOP AND CHROME</div><h1 id="install-or-update-the-unpacked-browser-watching-test-extension">Install or update the bundled Browser Watching extension</h1>
+<p>The companion extension is currently supplied with the Windows installer rather than through the Chrome Web Store. Installing the Series Organizer+ Desktop MSI supplies its files but does not install or enable them in Chrome.</p>
+<nav aria-label="Contents"><strong>In this guide</strong><ul><li><a href="#install-the-extension">Install the extension</a></li><li><a href="#update-an-installed-test-copy">Update an installed copy</a></li></ul></nav><h2 id="install-the-extension">Install the extension</h2>
+<ol>
+<li><p>Install and open Series Organizer+ Desktop.</p>
+</li>
+<li><p>In Chrome, enter <code>chrome://extensions</code> in the address bar.</p>
+</li>
+<li><p>Turn on <strong>Developer mode</strong>.</p>
+</li>
+<li><p>Select <strong>Load unpacked</strong> and choose the installed extension folder:</p>
+<p><code>&lt;your installation folder&gt;\app\resources\browser-extension\watch-detection-pilot</code></p>
+<p>For a new installation using the default location, this is <code>%LOCALAPPDATA%\LastdaySoftware\SeriesOrganizerPlus\app\resources\browser-extension\watch-detection-pilot</code>. If you chose a different installation folder, use that folder instead. Older installations may still use <code>%LOCALAPPDATA%\Series Organizer Plus</code>. Select the folder containing <code>manifest.json</code>, not its parent. If the chooser does not expand an environment variable, open the location in File Explorer first.</p>
+</li>
+<li><p>From Chrome&#39;s Extensions menu, pin <strong>Series Organizer+ Browser Watching</strong> if you want its badge to remain visible.</p>
+</li>
+<li><p>Follow <a href="browser-watching.html#set-up-browser-watching">Set up Browser Watching</a> to enable the SO+ Desktop feature and approve the connection.</p>
+</li>
+</ol>
+<p>These steps follow <a href="https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked">Chrome&#39;s official unpacked-extension instructions</a>.</p>
+<h2 id="update-an-installed-test-copy">Update an installed copy</h2>
+<ol>
+<li>Install the newer Desktop MSI.</li>
+<li>Return to <code>chrome://extensions</code>.</li>
+<li>Select <strong>Reload</strong> on the extension you loaded from the installed folder.</li>
+<li>Refresh any streaming pages that were already open.</li>
+<li>Open the popup and check <strong>Desktop pairing</strong>.</li>
+</ol>
+<p>Do not assume that updating SO+ Desktop reloads Chrome&#39;s unpacked extension automatically. <a href="https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#reload-the-extension">Chrome&#39;s reload guidance</a> requires a host-page refresh after content-script changes.</p>
+<p>If you changed the Desktop installation folder, Chrome may still point to the older copy. Note your extension options, remove that old extension from Chrome, load the new installed folder and pair again. Removing the Chrome extension does not remove your Desktop Library or watch history.</p>
+<div class="footer"><a href="browser-watching.html">Back to the Browser Watching guide</a></div></main></body></html>

@@ -1,0 +1,230 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://seriesorganizer.com/guides/browser-watching.html"><title>Browser Watching with the Chrome Extension — Series Organizer+</title><style>:root{color-scheme:dark;--bg:#1e1e1e;--panel:#282828;--text:#f9f7f2;--muted:#c7c2bc;--accent:#ffae4d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:18px/1.65 "Segoe UI",Arial,sans-serif}
+main{max-width:1080px;margin:auto;padding:42px 52px 80px}h1{font-size:40px;line-height:1.2;letter-spacing:-.8px;margin:16px 0 24px}
+h2{font-size:28px;line-height:1.3;margin:58px 0 22px;border-top:1px solid #ffffff20;padding-top:28px;scroll-margin-top:25px}
+h3{font-size:23px;margin:34px 0 12px;scroll-margin-top:25px}p{margin:16px 0}li{margin:9px 0}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#ffcc91}a:focus-visible{outline:2px solid #ff8a00;outline-offset:5px}
+strong{color:#fff}code{font:15px/1.6 Consolas,monospace;background:#ffffff0b;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{white-space:pre-wrap}nav{background:var(--panel);border:1px solid #ffffff15;border-radius:10px;padding:22px 26px;margin:28px 0 36px}
+nav strong{display:block;font-size:19px}nav ul{display:grid;grid-template-columns:1fr 1fr;gap:5px 22px;padding:14px 0 0;list-style:none;margin:0}
+nav li{margin:0;font-size:16px}.image-link{display:block;width:fit-content;max-width:100%;margin:22px auto;text-decoration:none}
+img{display:block;max-width:100%;height:auto;border-radius:7px}.image-link img{box-shadow:0 8px 30px #0004}
+p:has(>em:only-child){color:var(--muted);font-size:16px;text-align:center;margin-top:10px}table{width:100%;border-collapse:collapse;margin:22px 0;font-size:17px}
+th,td{border:1px solid #ffffff25;text-align:left;vertical-align:top;padding:13px 15px}th{background:#33302c}td{background:#ffffff03}
+td .image-link{margin:0 auto;min-width:38px}td img{max-width:38px;border-radius:0;box-shadow:none}.table-wrap{overflow:auto}
+.footer{margin-top:55px;padding-top:22px;border-top:1px solid #ffffff20;color:var(--muted);font-size:15px}.kicker{font-size:14px;letter-spacing:1.5px;color:var(--accent)}
+@media(max-width:700px){main{padding:22px 20px 45px}body{font-size:17px}h1{font-size:30px}h2{font-size:25px}nav ul{grid-template-columns:1fr}th,td{padding:10px;font-size:15px}code{font-size:13px}}
+@media print{body{background:white;color:#222}main{max-width:none;padding:0}h1,h2,h3,strong{color:#111}nav{display:none}a{color:#333}.kicker{color:#555}th,td{background:white;border-color:#bbb}img{box-shadow:none}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><main><p><a href="../index.html">← Series Organizer+ website</a> · <a href="../help/">Help and guides</a></p><div class="kicker">SERIES ORGANIZER+ · WINDOWS DESKTOP AND CHROME</div><h1 id="browser-watching-with-the-chrome-extension">Browser Watching with the Chrome Extension</h1>
+<p>Browser Watching lets Series Organizer+ Desktop recognize a movie or TV episode playing in Chrome and offer it for review against your Library. <strong>Nothing is marked as seen until you confirm it in Desktop.</strong></p>
+<p>This guide covers setup, sending and reviewing titles, automatic options, badges, and troubleshooting. The extension currently supports Netflix, HBO Max, Prime Video, Apple TV, and Disney+.</p>
+<nav aria-label="Contents"><strong>In this guide</strong><ul><li><a href="#before-you-start">Before you start</a></li><li><a href="#set-up-browser-watching">Set up Browser Watching</a></li><li><a href="#detect-a-title-and-send-it-to-desktop">Detect a title and send it to Desktop</a></li><li><a href="#send-a-title-again-or-record-a-rewatch">Send a title again or record a rewatch</a></li><li><a href="#understand-the-extension-badge">Understand the extension badge</a></li><li><a href="#choose-how-much-happens-automatically">Choose how much happens automatically</a></li><li><a href="#troubleshoot-detection-and-delivery">Troubleshoot detection and delivery</a></li><li><a href="#check-the-desktop-connection">Check the Desktop connection</a></li><li><a href="#privacy-and-language">Privacy and language</a></li></ul></nav><h2 id="before-you-start">Before you start</h2>
+<p>You need Chrome and Series Organizer+ Desktop on the <strong>same Windows computer</strong>. Keep SO+ Desktop open with Browser Watching enabled while using the extension.</p>
+<p>For the extension supplied with the Windows installer, follow <a href="browser-watching-installation.html">Install or update the bundled extension</a> first. Installing SO+ Desktop does not automatically install or enable its Chrome extension.</p>
+<h2 id="set-up-browser-watching">Set up Browser Watching</h2>
+<ol>
+<li>Open Series Organizer+ Desktop.</li>
+<li>Go to <strong>Profile → Browser watching</strong> and turn on <strong>Enable Browser watching</strong>.</li>
+<li>Turn on <strong>Show Browser watching in the sidebar</strong> if you want a shortcut to the pending-title list.</li>
+</ol>
+<p><a class="image-link" href="assets/browser-watching/desktop-settings.png" aria-label="Open full size image: SO+ Desktop Profile Browser watching settings with Enable Browser watching and Show Browser watching in sidebar switched on"><img src="assets/browser-watching/desktop-settings.png" alt="SO+ Desktop Profile Browser watching settings with Enable Browser watching and Show Browser watching in sidebar switched on" loading="eager"></a></p>
+<p><em>Browser Watching settings are in SO+ Desktop Profile. Generate pairing code is the manual fallback, not the normal connection step.</em></p>
+<ol start="4">
+<li>Open Chrome&#39;s Extensions menu and select <strong>Series Organizer+ Browser Watching</strong>. Pin the extension if you want its badge to stay visible on the toolbar.</li>
+<li>In the popup, select <strong>Connect to Desktop</strong>.</li>
+<li>Compare the six-digit code in the extension with the SO+ Desktop prompt. Select <strong>Approve</strong> in SO+ Desktop only if the codes match and you started the request.</li>
+<li>If switching to SO+ Desktop closes the popup, reopen it after approval. Check that <strong>Desktop pairing</strong> now says <strong>Connected</strong>.</li>
+</ol>
+<p><a class="image-link" href="assets/browser-watching/pair-your-browser.png" aria-label="Open full size image: The extension and SO+ Desktop showing the same six digit pairing code with Approve in the SO+ Desktop prompt"><img src="assets/browser-watching/pair-your-browser.png" alt="The extension and SO+ Desktop showing the same six digit pairing code with Approve in the SO+ Desktop prompt" loading="eager"></a></p>
+<p><em>Compare the codes on your own screen. The code in this example is not a code to enter.</em></p>
+<h2 id="detect-a-title-and-send-it-to-desktop">Detect a title and send it to Desktop</h2>
+<ol>
+<li>Open a supported streaming page and start playing a movie or episode.</li>
+<li>If <strong>Check while the popup is closed</strong> is off, open the extension popup on that tab and leave it open while it checks. With that option on and the requested site access granted, checking can continue with the popup closed.</li>
+<li>Wait for the title to become ready. Detection needs advancing playback; Prime Video also uses an extra verification wait to reduce preview matches.</li>
+<li>Check the detected movie, show, and any episode details.</li>
+<li>Select <strong>Send to Desktop</strong>. If you enabled <strong>Send ready titles automatically</strong>, the extension sends a ready title for review without this click.</li>
+</ol>
+<p><a class="image-link" href="assets/browser-watching/extension-ready-to-send.png" aria-label="Open full size image: Extension popup with a detected Black Mirror episode and the Send to Desktop button"><img src="assets/browser-watching/extension-ready-to-send.png" alt="Extension popup with a detected Black Mirror episode and the Send to Desktop button" loading="eager"></a></p>
+<p><em>This is a title ready to send, not a recorded watch.</em></p>
+<h3 id="review-the-match-in-so-desktop">Review the match in SO+ Desktop</h3>
+<p>SO+ Desktop can show a confirmation prompt for a new pending title. You can also open <strong>Browser watching</strong> in the sidebar and select <strong>Review</strong> on its card.</p>
+<p>Cards with an eligible, matched movie or episode also offer <strong>Mark as seen</strong> directly. Check the title and episode before using it. The screen's media, Up Next, Favorites, To review and Archive filters help narrow pending items; Search finds a title in the list. The menu's <strong>Mark all as seen</strong> asks for confirmation and only records eligible matched items, removing each after a successful save. Unmatched or unresolved items stay for review. <strong>Remove all</strong> is a separate confirmed action and never records watches.</p>
+<ol>
+<li>Check the matched Library title.</li>
+<li>For a TV show, check the proposed season and episode. Use <strong>Choose another episode</strong> if they are wrong.</li>
+<li>Use <strong>Open details</strong> if you want to inspect the matched movie or episode.</li>
+<li>Select <strong>Mark as seen</strong> only when the match is correct.</li>
+</ol>
+<p><a class="image-link" href="assets/browser-watching/review-before-recording.png" aria-label="Open full size image: SO+ Desktop episode confirmation with Choose another episode Open details Mark as seen and Not now"><img src="assets/browser-watching/review-before-recording.png" alt="SO+ Desktop episode confirmation with Choose another episode Open details Mark as seen and Not now" loading="eager"></a></p>
+<p><strong>Not now</strong> leaves the item for later review. <strong>Remove</strong> clears a pending item without recording a watch.</p>
+<p><a class="image-link" href="assets/browser-watching/desktop-inbox.png" aria-label="Open full size image: SO+ Desktop Browser watching inbox with pending titles and Review Remove and Find in Discover actions"><img src="assets/browser-watching/desktop-inbox.png" alt="SO+ Desktop Browser watching inbox with pending titles and Review Remove and Find in Discover actions" loading="eager"></a></p>
+<h3 id="find-a-title-that-is-not-in-your-library">Find a title that is not in your Library</h3>
+<p>If SO+ Desktop cannot confidently match a title, use <strong>Choose Library title</strong> to link the correct existing Library entry. If it is not in your Library, select <strong>Find in Discover</strong> to search for it.</p>
+<p><a class="image-link" href="assets/browser-watching/find-missing-titles.png" aria-label="Open full size image: Sherlock Holmes sent from the extension and its unmatched SO+ Desktop review with Find in Discover"><img src="assets/browser-watching/find-missing-titles.png" alt="Sherlock Holmes sent from the extension and its unmatched SO+ Desktop review with Find in Discover" loading="eager"></a></p>
+<p><strong>Find in Discover</strong> starts a movie search for a detected movie and a TV-show search for a detected show or numbered episode. An ambiguous title from an Apple home or channel page starts in Movies; switch to TV Shows if needed.</p>
+<p>Searching or sending a title does not add it to your Library or mark it as seen. Add the correct title through Discover, then review the pending item again. If the player supplied only a show title, SO+ Desktop may still ask you to choose its episode.</p>
+<h2 id="send-a-title-again-or-record-a-rewatch">Send a title again or record a rewatch</h2>
+<p>Once SO+ Desktop has accepted the current confirmed title, the popup offers <strong>Send again to Desktop</strong>. Use it if you removed the original review item or want to submit the title again.</p>
+<p><a class="image-link" href="assets/browser-watching/extension-send-again.png" aria-label="Open full size image: Extension popup showing Sent to Desktop for review and Send again to Desktop"><img src="assets/browser-watching/extension-send-again.png" alt="Extension popup showing Sent to Desktop for review and Send again to Desktop" loading="eager"></a></p>
+<p>An existing pending item may be reused instead of duplicated. Check the SO+ Desktop inbox before sending again.</p>
+<p><strong>Sent to Desktop for review</strong> means SO+ Desktop accepted that title earlier. It does not say whether the item is still pending. Refreshing the streaming page does not clear automatic duplicate protection.</p>
+<p>Manual sending remains available with <strong>Skip titles already marked as seen</strong> enabled. Sending again does not itself record a rewatch: review and confirm the watch in SO+ Desktop. After a player closes or changes title, wait for the current title to be confirmed before sending.</p>
+<h2 id="understand-the-extension-badge">Understand the extension badge</h2>
+<p>The badge describes the <strong>current tab</strong>. Hover over the extension icon for its text description.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Badge</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a class="image-link" href="assets/browser-watching/badge-none.png" aria-label="Open full size image: Extension icon with no badge"><img src="assets/browser-watching/badge-none.png" alt="Extension icon with no badge" loading="eager"></a></td>
+<td>No badge</td>
+<td>No current watch status is available for this tab.</td>
+</tr>
+<tr>
+<td><a class="image-link" href="assets/browser-watching/badge-connected.png" aria-label="Open full size image: Extension icon with a green dot"><img src="assets/browser-watching/badge-connected.png" alt="Extension icon with a green dot" loading="eager"></a></td>
+<td>Green dot</td>
+<td>The extension recently connected to SO+ Desktop on a supported watch page.</td>
+</tr>
+<tr>
+<td><a class="image-link" href="assets/browser-watching/badge-checking.png" aria-label="Open full size image: Extension icon with a blue question mark"><img src="assets/browser-watching/badge-checking.png" alt="Extension icon with a blue question mark" loading="eager"></a></td>
+<td>Blue question mark</td>
+<td>A possible title is being checked, often while waiting for advancing playback.</td>
+</tr>
+<tr>
+<td><a class="image-link" href="assets/browser-watching/badge-ready.png" aria-label="Open full size image: Extension icon with a blue exclamation mark"><img src="assets/browser-watching/badge-ready.png" alt="Extension icon with a blue exclamation mark" loading="eager"></a></td>
+<td>Blue exclamation mark</td>
+<td>A title is ready to send manually.</td>
+</tr>
+<tr>
+<td><a class="image-link" href="assets/browser-watching/badge-sent.png" aria-label="Open full size image: Extension icon with a blue checkmark"><img src="assets/browser-watching/badge-sent.png" alt="Extension icon with a blue checkmark" loading="eager"></a></td>
+<td>Blue check</td>
+<td>SO+ Desktop accepted the title for review. Sending alone has not marked it as seen.</td>
+</tr>
+<tr>
+<td><a class="image-link" href="assets/browser-watching/badge-seen.png" aria-label="Open full size image: Extension icon with a green checkmark"><img src="assets/browser-watching/badge-seen.png" alt="Extension icon with a green checkmark" loading="eager"></a></td>
+<td>Green check</td>
+<td>SO+ Desktop confirmed that the exact movie or episode is already seen in your Library.</td>
+</tr>
+</tbody></table></div>
+<p>An already-seen result takes precedence over the sent badge. Neither checkmark proves that SO+ Desktop is currently connected or that its inbox still contains the item.</p>
+<h2 id="choose-how-much-happens-automatically">Choose how much happens automatically</h2>
+<p>Open <strong>Options</strong> in the extension. These three controls default to <strong>off</strong>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What it changes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Check while the popup is closed</strong></td>
+<td>Requests access to supported streaming sites so detection can continue with the popup closed.</td>
+</tr>
+<tr>
+<td><strong>Send ready titles automatically</strong></td>
+<td>Sends ready titles to SO+ Desktop for review. It does not mark them as seen. Enable background checks too if you want this to work with the popup closed.</td>
+</tr>
+<tr>
+<td><strong>Skip titles already marked as seen</strong></td>
+<td>With automatic sending enabled, skips a title when SO+ Desktop confirms that the exact movie or episode is already seen. Manual sending remains available for a rewatch.</td>
+</tr>
+</tbody></table></div>
+<p><a class="image-link" href="assets/browser-watching/options-and-skip-seen.png" aria-label="Open full size image: Extension Options with background checking automatic sending and skip already seen enabled alongside a watched title skipped automatically"><img src="assets/browser-watching/options-and-skip-seen.png" alt="Extension Options with background checking automatic sending and skip already seen enabled alongside a watched title skipped automatically" loading="eager"></a></p>
+<p><em>These settings are enabled for the example; they are not the defaults. The already-seen title was not automatically sent. Send to Desktop remains available.</em></p>
+<p>If Chrome has granted only some provider permissions, use <strong>Add missing site access</strong> when shown to include the others. If Chrome removes all required site access, background checks turn off.</p>
+<p>If SO+ Desktop cannot check whether a title is watched, <strong>Skip titles already marked as seen</strong> makes automatic sending wait. An uncertain match is not treated as an already-seen title.</p>
+<h3 id="adjust-the-prime-video-verification-wait">Adjust the Prime Video verification wait</h3>
+<p><strong>Prime playback verification</strong> ranges from 2 to 120 seconds and defaults to 20 seconds.</p>
+<p>Advancing playback earns this wait. A pause keeps progress already earned but does not complete the timer. Shorter waits may include previews.</p>
+<h3 id="match-translated-titles-and-different-episode-markers">Match translated titles and different episode markers</h3>
+<p>SO+ Desktop <strong>Profile → Language</strong> has an optional match language and extra single-letter season and episode markers. Use them if streaming titles are translated or the player&#39;s markers differ from the built-in <strong>S/T</strong> and <strong>E</strong> letters.</p>
+<p>The match language also helps matching Local Files; it does not change your normal content language.</p>
+<h2 id="troubleshoot-detection-and-delivery">Troubleshoot detection and delivery</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop is offline</td>
+<td>Open SO+ Desktop, enable Browser Watching for the active profile, and allow time for reconnection. Do not pair again just because you closed Desktop.</td>
+</tr>
+<tr>
+<td>Nothing happens with the popup closed</td>
+<td>Enable <strong>Check while the popup is closed</strong> and grant site access. For automatic delivery, also enable <strong>Send ready titles automatically</strong>.</td>
+</tr>
+<tr>
+<td>A provider still does not detect</td>
+<td>Check its Chrome site access. Use <strong>Add missing site access</strong> if shown. Play the title and open the popup on that tab to inspect it.</td>
+</tr>
+<tr>
+<td>A question mark stays visible</td>
+<td>Let playback advance and allow the player to expose its title. For Prime, allow the verification delay. A paused or stalled video cannot complete verification.</td>
+</tr>
+<tr>
+<td>A title was sent but no SO+ Desktop card is present</td>
+<td>Check the active SO+ Desktop profile and inbox. The sent message records earlier acceptance, not current inbox presence. Use <strong>Send again to Desktop</strong> for a confirmed current title.</td>
+</tr>
+<tr>
+<td>SO+ Desktop proposes the wrong movie or episode</td>
+<td>Use <strong>Choose Library title</strong> or <strong>Choose another episode</strong>. Do not confirm a wrong match.</td>
+</tr>
+<tr>
+<td>An old tab does not update</td>
+<td>Return to the tab and resume playback. More than two minutes without a reading requires fresh advancing playback. This differs from pausing while checks continue: an already confirmed Apple or Prime episode can remain identified.</td>
+</tr>
+</tbody></table></div>
+<h3 id="use-a-pairing-code-instead">Use a pairing code instead</h3>
+<p>If button-based pairing is unavailable:</p>
+<ol>
+<li>In Desktop <strong>Profile → Browser watching</strong>, select <strong>Generate pairing code</strong>.</li>
+<li>In the extension, expand <strong>Desktop pairing → Use a code instead</strong>.</li>
+<li>Enter the eight-digit code and select <strong>Pair</strong> within five minutes.</li>
+</ol>
+<p>The eight-digit manual code is different from the six-digit approval code. Generating a new code, switching Desktop profiles, or disabling Browser Watching can require pairing again.</p>
+<h2 id="check-the-desktop-connection">Check the Desktop connection</h2>
+<p>Open <strong>Desktop pairing</strong> in the extension to check the connection.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Status</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Connected</strong></td>
+<td>Desktop responded recently. You can send a ready title for review.</td>
+</tr>
+<tr>
+<td><strong>Desktop offline · pairing saved</strong></td>
+<td>Open Desktop with Browser Watching enabled and allow a short time for reconnection. You do not normally need to pair again after closing Desktop.</td>
+</tr>
+<tr>
+<td><strong>Not paired</strong></td>
+<td>Complete the pairing steps above.</td>
+</tr>
+</tbody></table></div>
+<p><a class="image-link" href="assets/browser-watching/extension-connected.png" aria-label="Open full size image: Extension popup showing Desktop pairing Connected"><img src="assets/browser-watching/extension-connected.png" alt="Extension popup showing Desktop pairing Connected" loading="eager"></a></p>
+<p>The Desktop sidebar&#39;s green dot also means the extension contacted Desktop recently. It disappears after roughly 45 seconds without authenticated contact. Reconnection restores it without new approval.</p>
+<p>A saved pairing, detected title, or checkmark is not proof of a live connection. Check <strong>Desktop pairing</strong> separately. If reconnection fails, check the active Desktop profile and its Browser Watching setting, then try <strong>Connect to Desktop</strong> or the manual fallback.</p>
+<h3 id="share-a-diagnostic-report">Share a diagnostic report</h3>
+<p>If a supported provider still fails:</p>
+<ol>
+<li>Open the extension on the affected tab and expand <strong>Developer tools</strong>.</li>
+<li>Select <strong>Refresh</strong> while the issue is visible.</li>
+<li>Copy the <strong>Local diagnostic report</strong>, or use <strong>Append report to text file…</strong> to save a local copy.</li>
+<li>Review and redact the report before sharing it.</li>
+<li>Contact <a href="mailto:support@seriesorganizer.com">support@seriesorganizer.com</a> with the report, provider, expected movie or episode, player language, and a short description of the problem.</li>
+</ol>
+<p>Reports can include page paths, titles, and playback readings. Never share passwords, tokens, cookies, or account details. Reports are not uploaded automatically.</p>
+<h2 id="privacy-and-language">Privacy and language</h2>
+<p>Pairing and title delivery use a local connection between Chrome and SO+ Desktop on this computer. The extension sends detected titles or episode information for matching. It does not send the streaming page URL, playback time, or diagnostic report to Desktop.</p>
+<p>SO+ Desktop can return a yes/no watched result for an exact Library match; it does not give the extension your Library records. Background site access and automatic sending are separate, optional choices.</p>
+<p>While paired, the popup follows SO+ Desktop&#39;s effective app language. While unpaired, it follows Chrome&#39;s interface language. Streaming titles stay in the language supplied by the service.</p>
+<div class="footer">Series Organizer+ · Movies &amp; TV, organized.<br><a href="browser-watching-installation.html">Install or update the bundled extension</a></div></main></body></html>

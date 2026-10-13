@@ -32,10 +32,34 @@
     <loc>https://seriesorganizer.com/pt/support.html</loc>
     <lastmod>2026-09-15</lastmod>
   </url>
+  <url>
+    <loc>https://seriesorganizer.com/guides/browser-watching.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/guides/browser-watching-installation.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/help/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/pt/help/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/guides/library-sync-backup.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
   <!-- NEWS:START -->
   <url>
     <loc>https://seriesorganizer.com/news/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/news/posts/series-organizer-plus-2-1-0.html</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/news/posts/help-test-series-organizer-plus.html</loc>

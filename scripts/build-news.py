@@ -142,10 +142,11 @@ def header(prefix: str = "../") -> str:
       <a href="{prefix}index.html#features">Features</a>
       <a href="{prefix}index.html#discover">Discover</a>
       <a href="{prefix}news/">News</a>
+      <a href="{prefix}help/">Help</a>
       <a href="{prefix}index.html#legacy">Our story</a>
       <a href="{prefix}index.html#development">What's next</a>
     </nav>
-    <nav class="footer-links" aria-label="Language"><span><strong>EN</strong> | <a href="{prefix}pt/">PT</a></span></nav>
+    <nav class="footer-links" aria-label="Language and help"><span><strong>EN</strong> | <a href="{prefix}pt/">PT</a></span><a href="{prefix}help/">Help</a></nav>
   </div>
 </header>'''
 
@@ -172,6 +173,7 @@ def footer(prefix: str = "../") -> str:
       <a href="{prefix}website-privacy.html">Website Privacy</a>
       <a href="{prefix}account-deletion.html">Account deletion</a>
       <a href="{prefix}support.html">Support</a>
+      <a href="{prefix}help/">Help</a>
     </nav>
   </div>
 </footer>'''
