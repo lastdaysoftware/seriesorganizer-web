@@ -142,7 +142,6 @@ def header(prefix: str = "../") -> str:
       <a href="{prefix}index.html#features">Features</a>
       <a href="{prefix}index.html#discover">Discover</a>
       <a href="{prefix}news/">News</a>
-      <a href="{prefix}help/">Help</a>
       <a href="{prefix}index.html#legacy">Our story</a>
       <a href="{prefix}index.html#development">What's next</a>
     </nav>
