@@ -15,6 +15,7 @@ translations = {
     ">Our story<": ">A nossa história<", ">What's next<": ">O que vem a seguir<",
     ">Privacy<": ">Privacidade<", ">Website Privacy<": ">Privacidade do website<",
     ">Account deletion<": ">Eliminar a conta<", ">Support<": ">Suporte<",
+    ">Support us!<": ">Apoie-nos!<",
     "A LastDay Software project.": "Um projeto da LastDay Software.",
     "This product uses the TMDB API but is not endorsed or certified by TMDB.":
         "Este produto usa a API do TMDB mas não é apoiado nem certificado pela TMDB.",

@@ -688,6 +688,78 @@ a:focus-visible {
   font-size: 0.92rem;
 }
 
+/* Optional project support, separate from technical Support. */
+.support-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 32px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  text-align: left;
+  scroll-margin-top: 10rem;
+}
+
+.support-copy {
+  min-width: 0;
+}
+
+.support-panel h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  line-height: 1.25;
+}
+
+.support-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.support-action {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.support-donate-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  max-width: 100%;
+  font-family: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.support-donate-button:focus-visible {
+  outline: 2px solid var(--orange-light);
+  outline-offset: 4px;
+}
+
+.support-panel .support-note {
+  max-width: 15rem;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.footer-links a.footer-support-us {
+  color: var(--orange-light);
+}
+
+@media (max-width: 600px) {
+  .support-panel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 22px;
+  }
+}
+
 /* Policy / support pages */
 
 .policy-page {
@@ -1173,6 +1245,10 @@ footer {
   justify-content: flex-start;
 }
 
+.hero-support-form {
+  margin: 20px 0 0;
+}
+
 .hero-tags {
   margin-top: 22px;
   display: flex;
@@ -1434,6 +1510,24 @@ footer {
 
 .gallery-card {
   overflow: hidden;
+}
+
+.desktop-tool-shot {
+  min-width: 0;
+  margin: 0;
+}
+
+.desktop-tool-preview {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.desktop-tool-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .gallery-copy {

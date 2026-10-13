@@ -174,6 +174,7 @@ def footer(prefix: str = "../") -> str:
       <a href="{prefix}account-deletion.html">Account deletion</a>
       <a href="{prefix}support.html">Support</a>
       <a href="{prefix}help/">Help</a>
+      <a class="footer-support-us" href="{prefix}index.html#support-us">Support us!</a>
     </nav>
   </div>
 </footer>'''
