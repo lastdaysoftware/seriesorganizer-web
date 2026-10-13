@@ -8,8 +8,8 @@
 <link rel="alternate icon" type="image/png" href="../assets/brand/icon_play_store_512.png" />
 <link rel="stylesheet" href="../styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="../feed.xml" />
-  <title>Política de Privacidade — Series Organizer+</title>
-  <meta name="description" content="Privacidade do Series Organizer+ no Android e Windows, incluindo a extensão Browser Watching." />
+  <title>Políticas de Privacidade — Series Organizer+</title>
+  <meta name="description" content="Políticas de privacidade do Series Organizer+ para Android, Windows Desktop, extensão Chrome e website." />
   <link rel="canonical" href="https://seriesorganizer.com/pt/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/privacy.html" />
@@ -22,7 +22,7 @@
       <img class="brand-icon" src="../assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
       <div class="brand-text">
         <strong>Series Organizer+</strong>
-        <small>Filmes e TV, organizados.</small>
+        <small>Movies &amp; TV, organized.</small>
       </div>
     </a>
     <nav class="main-nav" aria-label="Navegação principal">
@@ -41,269 +41,45 @@
     <div class="container policy-container">
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACIDADE</p>
-      <h1>Política de Privacidade</h1>
+      <h1>Políticas de Privacidade</h1>
       <p class="policy-updated">Última atualização: 13 de outubro de 2026</p>
 
       <section>
-        <h2>Sobre esta política</h2>
-        <p>
-          Series Organizer+ é uma aplicação Android e Windows da LastDay Software para organizar
-          e acompanhar filmes e séries. Segue uma abordagem local-first e funciona sem conta.
-        </p>
+        <h2>Escolhe a política para a tua plataforma</h2>
+        <p>Series Organizer+ é desenvolvido pela LastDay Software. As políticas abaixo explicam separadamente como cada aplicação, a extensão Chrome e este website tratam os dados.</p>
+      </section>
+
+      <div class="help-grid" aria-label="Políticas por plataforma">
+        <article class="help-card">
+          <h2>Android</h2>
+          <p>Biblioteca local, início de sessão opcional, sincronização, Cloud Backup e Firebase Analytics opcional no Android.</p>
+          <a href="android-privacy.html">Ler a política do Android →</a>
+        </article>
+        <article class="help-card">
+          <h2>Windows Desktop</h2>
+          <p>Dados locais, início de sessão opcional, sincronização, Cloud Backup e integração com Browser Watching no Windows.</p>
+          <a href="desktop-privacy.html">Ler a política do Desktop →</a>
+        </article>
+        <article class="help-card">
+          <h2>Extensão Chrome</h2>
+          <p>Deteção de títulos, permissões, ligação local, armazenamento e diagnósticos do Browser Watching.</p>
+          <a href="extension-privacy.html">Ler a política da extensão →</a>
+        </article>
+        <article class="help-card">
+          <h2>Website</h2>
+          <p>Analytics opcionais deste site e as tuas opções de consentimento.</p>
+          <a href="website-privacy.html">Ler a política do website →</a>
+        </article>
+      </div>
+
+      <section>
+        <h2>Browser Watching e utilização limitada</h2>
+        <p>A utilização de informação recebida através das APIs do Chrome pelo Series Organizer+ Browser Watching respeita a Política de Dados do Utilizador da Chrome Web Store, incluindo os requisitos de Utilização Limitada. Os dados são usados apenas no Browser Watching e para suporte e segurança necessários; nunca são vendidos nem usados para publicidade ou decisões de crédito. A <a href="extension-privacy.html">política da extensão</a> apresenta os detalhes.</p>
       </section>
 
       <section>
-        <h2>Dados guardados localmente no teu dispositivo</h2>
-        <p>Os dados locais do dispositivo podem incluir:</p>
-        <ul>
-          <li>Conteúdo da Biblioteca</li>
-          <li>Contagem de visualizações de filmes</li>
-          <li>Acompanhamento de séries e episódios</li>
-          <li>Atividade de visualização, incluindo datas e novas visualizações</li>
-          <li>Favoritos e estado de arquivo</li>
-          <li>Preferências do utilizador</li>
-          <li>Preferências de notificações e sincronização</li>
-          <li>Metadados TMDB em cache e referências de imagens</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Início de sessão opcional com Google</h2>
-        <p>
-          O início de sessão opcional com Google é implementado através de Google OAuth e autenticação
-          Supabase. Não é necessária uma conta para utilizar a Biblioteca local.
-        </p>
-        <p>
-          Google e Supabase fornecem informações básicas da conta, que podem incluir o teu
-          nome, endereço de email e identificadores da conta, para autenticação, apresentação
-          da conta com sessão iniciada e associação dos respetivos dados cloud. A aplicação
-          não recebe a tua palavra-passe Google. Iniciar sessão, por si só, não envia a Biblioteca.
-        </p>
-        <p>
-          Os tokens de autenticação são guardados localmente com encriptação baseada no Android Keystore
-          no Android e Windows Data Protection no Desktop. Os tokens são excluídos dos backups
-          cloud da aplicação e da cópia de segurança do sistema Android.
-        </p>
-      </section>
-
-      <section>
-        <h2>Sincronização opcional da conta</h2>
-        <p>
-          A sincronização da conta é distinta do Cloud Backup. Depois de a ativares explicitamente,
-          as alterações suportadas da Biblioteca e do acompanhamento são enviadas para Supabase e
-          recebidas noutros dispositivos associados à mesma conta. Estes registos incluem
-          identificadores de títulos e episódios, conteúdo da Biblioteca, favoritos, estado de
-          arquivo, estado de visualização, contagens e datas de visualização e opções de
-          notificações por série.
-        </p>
-        <p>
-          A sincronização também guarda identificadores da conta e informações sobre operações
-          e revisões, necessárias para aplicar alterações e repetir tentativas em segurança.
-          Podes sincronizar manualmente ou ativar verificações enquanto o Desktop está aberto
-          (incluindo na área de notificação) ou o Android está em primeiro plano. Não funcionam com a
-          aplicação fechada. As diferenças iniciais podem exigir a tua revisão antes da ativação.
-        </p>
-        <p>
-          Desativar as verificações automáticas interrompe essas verificações; não elimina dados
-          já guardados na cloud. Metadados TMDB, imagens, tokens de autenticação e preferências
-          gerais do dispositivo não fazem parte dos registos da Biblioteca enviados pela sincronização.
-          Preferências portáteis suportadas são sincronizadas separadamente, incluindo idiomas,
-          tema, apresentação, opções da Biblioteca, região e serviços.
-        </p>
-      </section>
-
-      <section>
-        <h2>Cloud Backup manual</h2>
-        <p>
-          Cloud Backup é manual, não automático. Uma cópia só é enviada quando a solicitas
-          explicitamente, incluindo quando escolhes associar os dados do dispositivo a uma
-          conta sem backup. Uma cópia é um snapshot de recuperação, não uma sincronização concluída.
-        </p>
-
-        <p>Os Cloud Backups podem conter:</p>
-        <ul>
-          <li>Conteúdo da Biblioteca</li>
-          <li>Acompanhamento de filmes</li>
-          <li>Acompanhamento de séries</li>
-          <li>Acompanhamento de episódios</li>
-          <li>Atividade de visualização, incluindo datas e novas visualizações</li>
-        </ul>
-
-        <p>Os backups atuais também incluem preferências portáteis suportadas do perfil,
-          como idiomas, tema, apresentação, opções da Biblioteca, região e serviços.</p>
-        <p>Os Cloud Backups excluem:</p>
-        <ul>
-          <li>Metadados e caches do TMDB</li>
-          <li>Dados de pessoas</li>
-          <li>Posters e outras imagens</li>
-          <li>Preferências de analytics</li>
-          <li>Preferências locais do dispositivo, caminhos, ligação da extensão e horários automáticos</li>
-          <li>Permissões e horários de notificações</li>
-          <li>Tokens de autenticação</li>
-        </ul>
-
-        <p>
-          O backend guarda, no máximo, os cinco snapshots imutáveis de backup mais recentes por conta.
-          O Supabase está atualmente alojado na região EU West.
-        </p>
-      </section>
-
-      <section>
-        <h2>Firebase Analytics opcional no Android</h2>
-        <p>
-          Firebase Analytics no Android está desativado por predefinição e só é ativado através de
-          consentimento explícito do utilizador.
-        </p>
-
-        <p>Quando ativado, pode recolher:</p>
-        <ul>
-          <li>Um identificador pseudónimo da instância da aplicação</li>
-          <li>Atividade do ciclo de vida da aplicação e das sessões</li>
-          <li>Localização aproximada inferida do endereço IP da ligação, não de GPS</li>
-          <li>Informação do dispositivo/plataforma</li>
-          <li>Contagem de filmes e séries na Biblioteca</li>
-        </ul>
-
-        <p>
-          Firebase Analytics não recebe títulos de conteúdos, pesquisas, biografias,
-          endereços de email, tokens de autenticação nem registos do histórico de visualização.
-          Os identificadores de publicidade e a personalização estão desativados.
-        </p>
-        <p>
-          Podes desativar analytics em Perfil &gt; Sobre &gt; Privacidade. Isto interrompe a
-          recolha futura; não elimina, por si só, informações recolhidas anteriormente.
-          Analytics utiliza um identificador da instância da aplicação, não o identificador
-          da tua conta Series Organizer+.
-        </p>
-      </section>
-
-      <section>
-        <h2>Extensão opcional Browser Watching</h2>
-        <p>A extensão opcional <a href="extension-privacy.html">Browser Watching para Chrome</a>
-          lê texto relevante da página/do leitor suportado e o estado de reprodução e envia
-          títulos detetados ao Desktop associado neste computador para confirmação explícita.
-          Não contém analytics nem publicidade. A verificação em segundo plano e o envio
-          automático são opções separadas.</p>
-        <p>A utilização de informação recebida através das APIs do Chrome respeita a Política
-          de Dados do Utilizador da Chrome Web Store, incluindo os requisitos de Utilização
-          Limitada. Os dados são usados apenas no Browser Watching e para suporte/segurança
-          necessários; nunca são vendidos nem usados para publicidade ou decisões de crédito.
-          A política da extensão abrange permissões, ligação/armazenamento locais,
-          diagnósticos e remoção.</p>
-      </section>
-
-      <section>
-        <h2>Pesquisas e pedidos de metadados</h2>
-        <p>
-          Pesquisar, explorar, abrir detalhes e atualizar metadados envia para TMDB o texto
-          de pesquisa, identificadores de títulos, idioma, região e filtros relevantes.
-          Os pedidos de recomendações podem utilizar identificadores de títulos da tua
-          Biblioteca ou histórico de visualização para obter sugestões relacionadas.
-          Estes pedidos são distintos do Firebase Analytics e não incluem a tua
-          palavra-passe Google nem tokens de autenticação.
-        </p>
-        <p>
-          Os serviços de rede recebem informações da ligação, como o endereço IP, ao
-          processar pedidos. TMDB fornece metadados de disponibilidade de streaming com
-          atribuição a JustWatch. Abrir uma ligação externa para um serviço ou vídeo
-          leva-te a esse serviço, ao qual se aplica a respetiva política de privacidade.
-        </p>
-      </section>
-
-      <section>
-        <h2>Diagnóstico e suporte</h2>
-        <p>
-          A aplicação mantém pequenos registos de diagnóstico rotativos no dispositivo
-          para resolver problemas. Estes registos são concebidos para ocultar credenciais,
-          endereços de email e identificadores de contas/perfis. Não são enviados automaticamente.
-          Se escolheres exportar e partilhar um registo ou contactar o suporte, recebemos
-          as informações que enviares; revê-as antes de partilhar. A correspondência de
-          suporte é conservada apenas pelo período razoavelmente necessário para tratar
-          e documentar o teu pedido.
-        </p>
-      </section>
-
-      <section>
-        <h2>Serviços utilizados</h2>
-        <ul>
-          <li><strong>TMDB</strong> — metadados de filmes, TV, episódios, pessoas, imagens, vídeos e serviços.</li>
-          <li><strong>JustWatch</strong> — atribuição de disponibilidade de streaming fornecida através do TMDB.</li>
-          <li><strong>Supabase</strong> — autenticação Google opcional, sincronização da conta e Cloud Backup.</li>
-          <li><strong>Google OAuth</strong> — autenticação opcional.</li>
-          <li><strong>Google / Firebase</strong> — analytics opcionais após consentimento do utilizador.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Transmissão e processamento internacional</h2>
-        <p>
-          Os serviços de rede suportados são acedidos através de ligações HTTPS encriptadas.
-          Alguns serviços de terceiros podem processar informação fora do teu país ou região,
-          de acordo com a sua própria infraestrutura e termos de privacidade.
-        </p>
-      </section>
-
-      <section>
-        <h2>Retenção</h2>
-        <p>
-          Os dados locais da aplicação permanecem no dispositivo até serem removidos através das funcionalidades
-          da aplicação, dos controlos de armazenamento do Android ou da desinstalação.
-        </p>
-        <p>
-          Cloud Backup mantém, no máximo, os cinco snapshots imutáveis mais recentes associados
-          a uma conta. Os registos de sincronização e o respetivo histórico de alterações/operações
-          são distintos desses cinco snapshots e permanecem associados à conta até à eliminação.
-          Eliminar a conta cloud Series Organizer+ remove os respetivos Cloud Backups e dados
-          de sincronização. Terminar sessão ou interromper a sincronização automática não os elimina.
-        </p>
-      </section>
-
-      <section>
-        <h2>As tuas opções de privacidade</h2>
-        <ul>
-          <li>Utilizar Series Organizer+ sem iniciar sessão.</li>
-          <li>Escolher se pretendes criar um Cloud Backup manual.</li>
-          <li>Escolher se pretendes ativar a sincronização da conta e as verificações automáticas.</li>
-          <li>Escolher se o Firebase Analytics opcional é ativado.</li>
-          <li>Terminar sessão na tua conta Series Organizer+ associada ao Google.</li>
-          <li>Eliminar a tua conta cloud Series Organizer+, Cloud Backups e dados de sincronização.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Eliminação da conta e dos dados cloud</h2>
-        <p>
-          Consulta a <a href="account-deletion.html">página de eliminação da conta</a> para o processo público
-          de eliminação. Eliminar uma conta Series Organizer+ não elimina a tua Conta Google.
-        </p>
-      </section>
-
-      <section>
-        <h2>Crianças</h2>
-        <p>
-          Series Organizer+ é uma aplicação de organização de conteúdos destinada ao público em geral e
-          não é dirigida a crianças com menos de 13 anos. A LastDay Software não recolhe conscientemente
-          informações pessoais de crianças com menos de 13 anos. Se acreditares que uma criança forneceu
-          informações pessoais através de uma conta ou pedido de suporte, contacta-nos para que possam
-          ser analisadas e eliminadas quando apropriado.
-        </p>
-      </section>
-
-      <section>
-        <h2>Alterações a esta política</h2>
-        <p>
-          Esta política poderá ser atualizada à medida que Series Organizer+ evolui ou que os seus serviços e
-          práticas de tratamento de dados mudam. A data da revisão mais recente será apresentada nesta página.
-        </p>
-      </section>
-
-      <section>
-        <h2>Contacto</h2>
-        <p>
-          Para questões de privacidade, contacta
-          <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>
-          ou consulta a <a href="support.html">página de Suporte</a>.
-        </p>
+        <h2>Contacto e eliminação da conta</h2>
+        <p>Para questões de privacidade, contacta <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>. Consulta a <a href="account-deletion.html">página de eliminação da conta</a> para eliminar a conta Series Organizer+ e os dados cloud associados.</p>
       </section>
     </div>
   </main>
@@ -315,7 +91,7 @@
         <img src="../assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
         <div>
           <strong>Series Organizer+</strong>
-          <small>Filmes e TV, organizados.</small>
+          <small>Movies &amp; TV, organized.</small>
         </div>
       </div>
       <p>Um projeto LastDay Software.</p>

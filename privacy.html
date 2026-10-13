@@ -8,8 +8,8 @@
 <link rel="alternate icon" type="image/png" href="assets/brand/icon_play_store_512.png" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="feed.xml" />
-  <title>Privacy Policy — Series Organizer+</title>
-  <meta name="description" content="Privacy policy for Series Organizer+ on Android and Windows, including Browser Watching." />
+  <title>Privacy policies — Series Organizer+</title>
+  <meta name="description" content="Series Organizer+ privacy policies for Android, Windows Desktop, Chrome companion and website." />
   <link rel="canonical" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/privacy.html" />
@@ -41,264 +41,45 @@
     <div class="container policy-container">
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACY</p>
-      <h1>Privacy Policy</h1>
+      <h1>Privacy policies</h1>
       <p class="policy-updated">Last updated: October 13, 2026</p>
 
       <section>
-        <h2>About this policy</h2>
-        <p>
-          Series Organizer+ is an Android and Windows application by LastDay Software for organizing
-          and tracking movies and TV shows. It is local-first and works without an account.
-        </p>
+        <h2>Choose the policy for your platform</h2>
+        <p>Series Organizer+ is developed by LastDay Software. The policies below explain separately how each app, the Chrome companion and this website handle data.</p>
+      </section>
+
+      <div class="help-grid" aria-label="Policies by platform">
+        <article class="help-card">
+          <h2>Android</h2>
+          <p>Local Library, optional sign-in, account sync, Cloud Backup and optional Android Firebase Analytics.</p>
+          <a href="android-privacy.html">Read the Android policy →</a>
+        </article>
+        <article class="help-card">
+          <h2>Windows Desktop</h2>
+          <p>Local data, optional sign-in, account sync, Cloud Backup and Browser Watching integration on Windows.</p>
+          <a href="desktop-privacy.html">Read the Desktop policy →</a>
+        </article>
+        <article class="help-card">
+          <h2>Chrome companion</h2>
+          <p>Browser Watching title detection, permissions, local pairing, storage and diagnostics.</p>
+          <a href="extension-privacy.html">Read the extension policy →</a>
+        </article>
+        <article class="help-card">
+          <h2>Website</h2>
+          <p>This website’s optional analytics and your consent choices.</p>
+          <a href="website-privacy.html">Read the website policy →</a>
+        </article>
+      </div>
+
+      <section>
+        <h2>Browser Watching and Limited Use</h2>
+        <p>Series Organizer+ Browser Watching’s use of information received through Chrome APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data is used only for Browser Watching and necessary support and security purposes, never sold or used for advertising or creditworthiness decisions. The <a href="extension-privacy.html">extension policy</a> provides the details.</p>
       </section>
 
       <section>
-        <h2>Data stored locally on your device</h2>
-        <p>Local device data may include:</p>
-        <ul>
-          <li>Library membership</li>
-          <li>Movie watch counts</li>
-          <li>TV-show and episode tracking</li>
-          <li>Viewing activity, including viewing dates and rewatches</li>
-          <li>Favorites and archived state</li>
-          <li>User preferences</li>
-          <li>Notification and synchronization preferences</li>
-          <li>Cached TMDB metadata and artwork references</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Optional Google sign-in</h2>
-        <p>
-          Optional Google sign-in is implemented through Google OAuth and Supabase
-          authentication. An account is not required to use the local Library.
-        </p>
-        <p>
-          Google and Supabase provide basic account information, which may include your
-          name, email address and account identifiers, to authenticate you, display your
-          signed-in account and associate its cloud data. The app does not receive your
-          Google password. Signing in alone does not upload your Library.
-        </p>
-        <p>
-          Authentication tokens are stored locally using Android Keystore-backed encryption
-          on Android and Windows Data Protection on Desktop. They are excluded from app
-          cloud backups and Android system backup.
-        </p>
-      </section>
-
-      <section>
-        <h2>Optional account synchronization</h2>
-        <p>
-          Account sync is separate from Cloud Backup. After you explicitly activate it,
-          supported Library and tracking changes are sent to Supabase and received on
-          other devices linked to the same account. These records include title and
-          episode identifiers, Library membership, favorites, archived state, watched
-          state, viewing counts and dates, and per-show notification choices.
-        </p>
-        <p>
-          Sync also stores account identifiers and operation/revision information needed
-          to apply changes and retry safely. You can run sync manually or enable optional
-          checks while Desktop is open (including in the tray) or Android is in the foreground. It does not imply
-          continuous synchronization while the app is closed. Initial differences may
-          require your review before sync is enabled.
-        </p>
-        <p>
-          Disabling automatic checks stops those checks; it does not delete data already
-          stored in the cloud. TMDB metadata, artwork, authentication tokens and device-wide
-          preferences are not part of the Library records sent by account sync.
-          Supported portable preferences are synchronized separately, including
-          languages, theme, presentation, Library options, region and services.
-        </p>
-      </section>
-
-      <section>
-        <h2>Manual Cloud Backup</h2>
-        <p>
-          Cloud Backup is manual, not automatic. A backup is uploaded only when you
-          explicitly request one, including when you choose to link your device data to
-          an account with no backup. A backup is a recovery snapshot, not a completed sync.
-        </p>
-
-        <p>Cloud backups may contain:</p>
-        <ul>
-          <li>Library membership</li>
-          <li>Movie tracking</li>
-          <li>TV-show tracking</li>
-          <li>Episode tracking</li>
-          <li>Viewing activity, including viewing dates and rewatches</li>
-        </ul>
-
-        <p>Current backups also include supported portable profile preferences, such as
-          languages, theme, presentation, Library options, region and streaming services.</p>
-        <p>Cloud backups exclude:</p>
-        <ul>
-          <li>TMDB metadata and caches</li>
-          <li>Person data</li>
-          <li>Posters and other artwork</li>
-          <li>Analytics preferences</li>
-          <li>Device-only preferences, local paths, pairing and automatic schedules</li>
-          <li>Notification permissions and schedules</li>
-          <li>Authentication tokens</li>
-        </ul>
-
-        <p>
-          The backend stores at most the five newest immutable backup snapshots per account.
-          Supabase is currently deployed in EU West.
-        </p>
-      </section>
-
-      <section>
-        <h2>Optional Android Firebase Analytics</h2>
-        <p>
-          Android Firebase Analytics is disabled by default and is enabled only through explicit
-          user opt-in.
-        </p>
-
-        <p>When enabled, it may collect:</p>
-        <ul>
-          <li>A pseudonymous app-instance identifier</li>
-          <li>App lifecycle and session activity</li>
-          <li>Approximate location inferred from the network IP address, not GPS</li>
-          <li>Device/platform information</li>
-          <li>Library movie and TV-show counts</li>
-        </ul>
-
-        <p>
-          Firebase Analytics does not receive media titles, searches, biographies,
-          email addresses, authentication tokens or watch-history records.
-          Advertising identifiers and personalization are disabled.
-        </p>
-        <p>
-          You can turn analytics off in Profile &gt; About &gt; Privacy. This stops future
-          analytics collection; it does not itself erase information collected earlier.
-          Analytics uses an app-instance identifier, not your Series Organizer+ account ID.
-        </p>
-      </section>
-
-      <section>
-        <h2>Optional Browser Watching companion</h2>
-        <p>The optional <a href="extension-privacy.html">Browser Watching Chrome companion</a>
-          reads relevant supported page/player text and playback state and sends detected
-          titles to the paired Desktop app on this computer for explicit watch confirmation.
-          It has no analytics or advertising integration. Background checks and automatic
-          sending are separate opt-in choices.</p>
-        <p>Its use of information received through Chrome APIs adheres to the Chrome Web Store
-          User Data Policy, including the Limited Use requirements. Data is used only for
-          Browser Watching and necessary support/security purposes, never sold or used for
-          advertising or creditworthiness decisions. The linked companion policy covers
-          permissions, local pairing/storage, diagnostics and removal.</p>
-      </section>
-
-      <section>
-        <h2>Metadata searches and requests</h2>
-        <p>
-          Searching, browsing, opening details and refreshing metadata send the relevant
-          search text, title identifiers, language, region and filter parameters to TMDB.
-          Recommendation requests may use identifiers of titles in your Library or watch
-          history to fetch related suggestions. These requests are separate from Firebase
-          Analytics and do not include your Google password or authentication tokens.
-        </p>
-        <p>
-          Network providers receive connection information such as your IP address when
-          handling requests. TMDB supplies streaming-availability metadata with JustWatch
-          attribution. Opening an external provider or video link takes you to that
-          service, whose own privacy policy applies.
-        </p>
-      </section>
-
-      <section>
-        <h2>Diagnostics and support</h2>
-        <p>
-          The app keeps small, rotating diagnostic logs on your device for troubleshooting.
-          Logs are designed to redact credentials, email addresses and account/profile
-          identifiers. They are not uploaded automatically. If you choose to export and
-          share a log or contact support, we receive the information you send; review it
-          before sharing. Support correspondence is kept only as reasonably necessary to
-          handle and document your request.
-        </p>
-      </section>
-
-      <section>
-        <h2>Services used</h2>
-        <ul>
-          <li><strong>TMDB</strong> — movie, TV, episode, Person, artwork, video and provider metadata.</li>
-          <li><strong>JustWatch</strong> — streaming-availability attribution supplied through TMDB.</li>
-          <li><strong>Supabase</strong> — optional Google authentication, account sync and cloud backup.</li>
-          <li><strong>Google OAuth</strong> — optional authentication.</li>
-          <li><strong>Google / Firebase</strong> — optional analytics after user opt-in.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Transmission and international processing</h2>
-        <p>
-          Supported network services are accessed over encrypted HTTPS connections.
-          Some third-party services may process information outside your country or region
-          according to their own infrastructure and privacy terms.
-        </p>
-      </section>
-
-      <section>
-        <h2>Retention</h2>
-        <p>
-          Local app data remains on the device until it is removed through app functionality,
-          Android storage controls, or uninstall behavior.
-        </p>
-        <p>
-          Cloud Backup retains at most the five newest immutable snapshots associated with
-          an account. Account sync records and its change/operation history are separate
-          from those five snapshots and remain associated with the account until deletion.
-          Deleting the Series Organizer+ cloud account removes its associated cloud backups
-          and account-sync data. Signing out or stopping automatic sync does not delete them.
-        </p>
-      </section>
-
-      <section>
-        <h2>Your privacy choices</h2>
-        <ul>
-          <li>Use Series Organizer+ without signing in.</li>
-          <li>Choose whether to create a manual cloud backup.</li>
-          <li>Choose whether to activate account sync and enable automatic sync checks.</li>
-          <li>Choose whether optional Firebase Analytics is enabled.</li>
-          <li>Sign out of your Google-linked Series Organizer+ account.</li>
-          <li>Delete your Series Organizer+ cloud account, backups and account-sync data.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Account and cloud-data deletion</h2>
-        <p>
-          See the <a href="account-deletion.html">Account deletion page</a> for the public
-          deletion pathway. Deleting a Series Organizer+ account does not delete your Google Account.
-        </p>
-      </section>
-
-      <section>
-        <h2>Children</h2>
-        <p>
-          Series Organizer+ is a general-audience media organization application and is
-          not directed to children under 13. LastDay Software does not knowingly collect
-          personal information from children under 13. If you believe a child has provided
-          personal information through an account or support request, contact us so it can
-          be reviewed and deleted where appropriate.
-        </p>
-      </section>
-
-      <section>
-        <h2>Policy changes</h2>
-        <p>
-          This policy may be updated as Series Organizer+ changes or as its services and
-          data-handling practices evolve. The latest revision date will be shown on this page.
-        </p>
-      </section>
-
-      <section>
-        <h2>Contact</h2>
-        <p>
-          For privacy questions, contact
-          <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>
-          or see the <a href="support.html">Support page</a>.
-        </p>
+        <h2>Contact and account deletion</h2>
+        <p>For privacy questions, contact <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>. See the <a href="account-deletion.html">account deletion page</a> to delete your Series Organizer+ account and its associated cloud data.</p>
       </section>
     </div>
   </main>

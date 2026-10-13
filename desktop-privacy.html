@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#111111" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/icon_master.svg" />
+<link rel="alternate icon" type="image/png" href="assets/brand/icon_play_store_512.png" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="feed.xml" />
+  <title>Windows Desktop Privacy Policy — Series Organizer+</title>
+  <meta name="description" content="Privacy policy for Series Organizer+ on Windows Desktop, including local data, accounts, sync and Cloud Backup." />
+  <link rel="canonical" href="https://seriesorganizer.com/desktop-privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/desktop-privacy.html" />
+  <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/desktop-privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://seriesorganizer.com/desktop-privacy.html" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Series Organizer+ home">
+      <img class="brand-icon" src="assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+      <div class="brand-text">
+        <strong>Series Organizer+</strong>
+        <small>Movies &amp; TV, organized.</small>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#discover">Discover</a>
+      <a href="news/">News</a>
+      <a href="help/">Help</a>
+      <a href="index.html#legacy">Our story</a>
+      <a href="index.html#development">What's next</a>
+    </nav>
+    <nav class="footer-links" aria-label="Language and help"><span><strong>EN</strong> | <a href="pt/desktop-privacy.html">PT</a></span><a href="help/">Help</a></nav>
+  </div>
+</header>
+
+  <main class="policy-page">
+    <div class="container policy-container">
+      <a class="policy-back" href="privacy.html">← Privacy policies</a>
+      <p class="section-label">PRIVACY</p>
+      <h1>Windows Desktop Privacy Policy</h1>
+      <p class="policy-updated">Last updated: October 13, 2026</p>
+
+      <section>
+        <h2>About this policy</h2>
+        <p>This policy covers Series Organizer+ for Windows Desktop, an application by LastDay Software for organizing and tracking movies and TV shows. It is local-first and the local Library works without an account.</p>
+        <p>The <a href="privacy.html">privacy overview</a> links to the separate policies for the other platforms, Chrome companion and this website.</p>
+      </section>
+
+      <section>
+        <h2>Data stored locally on your device</h2>
+        <p>Local device data may include:</p>
+        <ul>
+          <li>Library membership</li>
+          <li>Movie watch counts</li>
+          <li>TV-show and episode tracking</li>
+          <li>Viewing activity, including viewing dates and rewatches</li>
+          <li>Favorites and archived state</li>
+          <li>User preferences</li>
+          <li>Notification and synchronization preferences</li>
+          <li>Cached TMDB metadata and artwork references</li>
+          <li>Desktop-only preferences, local file paths, pairing information and automatic schedules</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Optional Google sign-in</h2>
+        <p>
+          Optional Google sign-in is implemented through Google OAuth and Supabase
+          authentication. An account is not required to use the local Library.
+        </p>
+        <p>
+          Google and Supabase provide basic account information, which may include your
+          name, email address and account identifiers, to authenticate you, display your
+          signed-in account and associate its cloud data. The app does not receive your
+          Google password. Signing in alone does not upload your Library.
+        </p>
+        <p>Authentication tokens are stored locally using Windows Data Protection. They are excluded from app cloud backups.</p>
+      </section>
+
+      <section>
+        <h2>Optional account synchronization</h2>
+        <p>
+          Account sync is separate from Cloud Backup. After you explicitly activate it,
+          supported Library and tracking changes are sent to Supabase and received on
+          other devices linked to the same account. These records include title and
+          episode identifiers, Library membership, favorites, archived state, watched
+          state, viewing counts and dates, and per-show notification choices.
+        </p>
+        <p>Sync also stores account identifiers and operation/revision information needed to apply changes and retry safely. You can run sync manually or enable optional checks while Desktop is open, including in the tray. It does not imply continuous synchronization while the app is closed. Initial differences may require your review before sync is enabled.</p>
+        <p>
+          Disabling automatic checks stops those checks; it does not delete data already
+          stored in the cloud. TMDB metadata, artwork, authentication tokens and device-wide
+          preferences are not part of the Library records sent by account sync.
+          Supported portable preferences are synchronized separately, including
+          languages, theme, presentation, Library options, region and services.
+        </p>
+      </section>
+
+      <section>
+        <h2>Manual Cloud Backup</h2>
+        <p>
+          Cloud Backup is manual, not automatic. A backup is uploaded only when you
+          explicitly request one, including when you choose to link your device data to
+          an account with no backup. A backup is a recovery snapshot, not a completed sync.
+        </p>
+
+        <p>Cloud backups may contain:</p>
+        <ul>
+          <li>Library membership</li>
+          <li>Movie tracking</li>
+          <li>TV-show tracking</li>
+          <li>Episode tracking</li>
+          <li>Viewing activity, including viewing dates and rewatches</li>
+        </ul>
+
+        <p>Current backups also include supported portable profile preferences, such as
+          languages, theme, presentation, Library options, region and streaming services.</p>
+        <p>Cloud backups exclude:</p>
+        <ul>
+          <li>TMDB metadata and caches</li>
+          <li>Person data</li>
+          <li>Posters and other artwork</li>
+          <li>Device-only preferences, local paths, pairing and automatic schedules</li>
+          <li>Notification permissions and schedules</li>
+          <li>Authentication tokens</li>
+        </ul>
+
+        <p>
+          The backend stores at most the five newest immutable backup snapshots per account.
+          Supabase is currently deployed in EU West.
+        </p>
+      </section>
+
+      <section>
+        <h2>Desktop analytics</h2>
+        <p>The Windows Desktop app does not use Firebase Analytics. Local diagnostic logs are described below and are not uploaded automatically.</p>
+      </section>
+
+      <section>
+        <h2>Optional Browser Watching companion</h2>
+        <p>The optional <a href="extension-privacy.html">Browser Watching Chrome companion</a>
+          reads relevant supported page/player text and playback state and sends detected
+          titles to the paired Desktop app on this computer for explicit watch confirmation.
+          It has no analytics or advertising integration. Background checks and automatic
+          sending are separate opt-in choices.</p>
+        <p>Its use of information received through Chrome APIs adheres to the Chrome Web Store
+          User Data Policy, including the Limited Use requirements. Data is used only for
+          Browser Watching and necessary support/security purposes, never sold or used for
+          advertising or creditworthiness decisions. The linked companion policy covers
+          permissions, local pairing/storage, diagnostics and removal.</p>
+      </section>
+
+      <section>
+        <h2>Metadata searches and requests</h2>
+        <p>
+          Searching, browsing, opening details and refreshing metadata send the relevant
+          search text, title identifiers, language, region and filter parameters to TMDB.
+          Recommendation requests may use identifiers of titles in your Library or watch
+          history to fetch related suggestions. These requests do not include your Google password or authentication tokens.
+        </p>
+        <p>
+          Network providers receive connection information such as your IP address when
+          handling requests. TMDB supplies streaming-availability metadata with JustWatch
+          attribution. Opening an external provider or video link takes you to that
+          service, whose own privacy policy applies.
+        </p>
+      </section>
+
+      <section>
+        <h2>Diagnostics and support</h2>
+        <p>
+          The app keeps small, rotating diagnostic logs on your device for troubleshooting.
+          Logs are designed to redact credentials, email addresses and account/profile
+          identifiers. They are not uploaded automatically. If you choose to export and
+          share a log or contact support, we receive the information you send; review it
+          before sharing. Support correspondence is kept only as reasonably necessary to
+          handle and document your request.
+        </p>
+      </section>
+
+      <section>
+        <h2>Services used</h2>
+        <ul>
+          <li><strong>TMDB</strong> — movie, TV, episode, Person, artwork, video and provider metadata.</li>
+          <li><strong>JustWatch</strong> — streaming-availability attribution supplied through TMDB.</li>
+          <li><strong>Supabase</strong> — optional Google authentication, account sync and cloud backup.</li>
+          <li><strong>Google OAuth</strong> — optional authentication.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Transmission and international processing</h2>
+        <p>
+          Supported remote network services are accessed over encrypted HTTPS connections.
+          Some third-party services may process information outside your country or region
+          according to their own infrastructure and privacy terms.
+        </p>
+        <p>Browser Watching uses a local HTTP loopback connection between Chrome and Desktop on the same computer, not a remote cloud endpoint. Local pairing and delivery are covered by the <a href="extension-privacy.html">extension privacy policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>Retention</h2>
+        <p>Local Desktop app data remains on the device until removed through app functionality or your device storage controls.</p>
+        <p>
+          Cloud Backup retains at most the five newest immutable snapshots associated with
+          an account. Account sync records and its change/operation history are separate
+          from those five snapshots and remain associated with the account until deletion.
+          Deleting the Series Organizer+ cloud account removes its associated cloud backups
+          and account-sync data. Signing out or stopping automatic sync does not delete them.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your privacy choices</h2>
+        <ul>
+          <li>Use Series Organizer+ without signing in.</li>
+          <li>Choose whether to create a manual cloud backup.</li>
+          <li>Choose whether to activate account sync and enable automatic sync checks.</li>
+          <li>Sign out of your Google-linked Series Organizer+ account.</li>
+          <li>Delete your Series Organizer+ cloud account, backups and account-sync data.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Account and cloud-data deletion</h2>
+        <p>
+          See the <a href="account-deletion.html">Account deletion page</a> for the public
+          deletion pathway. Deleting a Series Organizer+ account does not delete your Google Account.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          Series Organizer+ is a general-audience media organization application and is
+          not directed to children under 13. LastDay Software does not knowingly collect
+          personal information from children under 13. If you believe a child has provided
+          personal information through an account or support request, contact us so it can
+          be reviewed and deleted where appropriate.
+        </p>
+      </section>
+
+      <section>
+        <h2>Policy changes</h2>
+        <p>
+          This policy may be updated as Series Organizer+ changes or as its services and
+          data-handling practices evolve. The latest revision date will be shown on this page.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact
+          <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>
+          or see the <a href="support.html">Support page</a>.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <img src="assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+        <div>
+          <strong>Series Organizer+</strong>
+          <small>Movies &amp; TV, organized.</small>
+        </div>
+      </div>
+      <p>A LastDay Software project.</p>
+      <p class="tmdb-attribution">
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
+        <a href="https://www.themoviedb.org/">Visit TMDB</a>.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="privacy.html">Privacy</a>
+      <a href="website-privacy.html">Website Privacy</a>
+      <a href="account-deletion.html">Account deletion</a>
+      <a href="support.html">Support</a>
+      <a href="help/">Help</a>
+      <a class="footer-support-us" href="index.html#support-us">Support us!</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
