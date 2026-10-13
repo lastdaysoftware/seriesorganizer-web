@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="../styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="../feed.xml" />
   <title>Política de Privacidade — Series Organizer+</title>
-  <meta name="description" content="Política de Privacidade do Series Organizer+, uma aplicação Android da LastDay Software." />
+  <meta name="description" content="Privacidade do Series Organizer+ no Android e Windows, incluindo a extensão Browser Watching." />
   <link rel="canonical" href="https://seriesorganizer.com/pt/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/privacy.html" />
@@ -42,12 +42,12 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACIDADE</p>
       <h1>Política de Privacidade</h1>
-      <p class="policy-updated">Última atualização: 6 de outubro de 2026</p>
+      <p class="policy-updated">Última atualização: 13 de outubro de 2026</p>
 
       <section>
         <h2>Sobre esta política</h2>
         <p>
-          Series Organizer+ é uma aplicação Android da LastDay Software para organizar
+          Series Organizer+ é uma aplicação Android e Windows da LastDay Software para organizar
           e acompanhar filmes e séries. Segue uma abordagem local-first e funciona sem conta.
         </p>
       </section>
@@ -81,7 +81,8 @@
         </p>
         <p>
           Os tokens de autenticação são guardados localmente com encriptação baseada no Android Keystore
-          e são excluídos da cópia de segurança do Android.
+          no Android e Windows Data Protection no Desktop. Os tokens são excluídos dos backups
+          cloud da aplicação e da cópia de segurança do sistema Android.
         </p>
       </section>
 
@@ -98,14 +99,16 @@
         <p>
           A sincronização também guarda identificadores da conta e informações sobre operações
           e revisões, necessárias para aplicar alterações e repetir tentativas em segurança.
-          Podes sincronizar manualmente ou ativar verificações agendadas opcionais quando a
-          aplicação passa para primeiro plano. Isto não implica sincronização contínua com a
+          Podes sincronizar manualmente ou ativar verificações enquanto o Desktop está aberto
+          (incluindo na área de notificação) ou o Android está em primeiro plano. Não funcionam com a
           aplicação fechada. As diferenças iniciais podem exigir a tua revisão antes da ativação.
         </p>
         <p>
           Desativar as verificações automáticas interrompe essas verificações; não elimina dados
           já guardados na cloud. Metadados TMDB, imagens, tokens de autenticação e preferências
           gerais do dispositivo não fazem parte dos registos da Biblioteca enviados pela sincronização.
+          Preferências portáteis suportadas são sincronizadas separadamente, incluindo idiomas,
+          tema, apresentação, opções da Biblioteca, região e serviços.
         </p>
       </section>
 
@@ -126,13 +129,15 @@
           <li>Atividade de visualização, incluindo datas e novas visualizações</li>
         </ul>
 
+        <p>Os backups atuais também incluem preferências portáteis suportadas do perfil,
+          como idiomas, tema, apresentação, opções da Biblioteca, região e serviços.</p>
         <p>Os Cloud Backups excluem:</p>
         <ul>
           <li>Metadados e caches do TMDB</li>
           <li>Dados de pessoas</li>
           <li>Posters e outras imagens</li>
           <li>Preferências de analytics</li>
-          <li>Preferências gerais da aplicação/dispositivo</li>
+          <li>Preferências locais do dispositivo, caminhos, ligação da extensão e horários automáticos</li>
           <li>Permissões e horários de notificações</li>
           <li>Tokens de autenticação</li>
         </ul>
@@ -144,9 +149,9 @@
       </section>
 
       <section>
-        <h2>Firebase Analytics opcional</h2>
+        <h2>Firebase Analytics opcional no Android</h2>
         <p>
-          Firebase Analytics está desativado por predefinição e só é ativado através de
+          Firebase Analytics no Android está desativado por predefinição e só é ativado através de
           consentimento explícito do utilizador.
         </p>
 
@@ -170,6 +175,21 @@
           Analytics utiliza um identificador da instância da aplicação, não o identificador
           da tua conta Series Organizer+.
         </p>
+      </section>
+
+      <section>
+        <h2>Extensão opcional Browser Watching</h2>
+        <p>A extensão opcional <a href="extension-privacy.html">Browser Watching para Chrome</a>
+          lê texto relevante da página/do leitor suportado e o estado de reprodução e envia
+          títulos detetados ao Desktop associado neste computador para confirmação explícita.
+          Não contém analytics nem publicidade. A verificação em segundo plano e o envio
+          automático são opções separadas.</p>
+        <p>A utilização de informação recebida através das APIs do Chrome respeita a Política
+          de Dados do Utilizador da Chrome Web Store, incluindo os requisitos de Utilização
+          Limitada. Os dados são usados apenas no Browser Watching e para suporte/segurança
+          necessários; nunca são vendidos nem usados para publicidade ou decisões de crédito.
+          A política da extensão abrange permissões, ligação/armazenamento locais,
+          diagnósticos e remoção.</p>
       </section>
 
       <section>

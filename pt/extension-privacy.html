@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#111111" />
+<link rel="icon" type="image/svg+xml" href="../assets/brand/icon_master.svg" />
+<link rel="alternate icon" type="image/png" href="../assets/brand/icon_play_store_512.png" />
+<link rel="stylesheet" href="../styles.css" />
+<link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="../feed.xml" />
+  <title>Privacidade da extensão Chrome — Series Organizer+</title>
+  <meta name="description" content="Como a extensão Series Organizer+ Browser Watching trata dados de deteção, ligação e diagnósticos locais." />
+  <link rel="canonical" href="https://seriesorganizer.com/pt/extension-privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/extension-privacy.html" />
+  <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/extension-privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://seriesorganizer.com/extension-privacy.html" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Início do Series Organizer+">
+      <img class="brand-icon" src="../assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+      <div class="brand-text">
+        <strong>Series Organizer+</strong>
+        <small>Filmes e TV, organizados.</small>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html#features">Funcionalidades</a>
+      <a href="index.html#discover">Descobrir</a>
+      <a href="../news/">Notícias</a>
+      <a href="help/">Ajuda</a>
+      <a href="index.html#legacy">A nossa história</a>
+      <a href="index.html#development">O que vem a seguir</a>
+    </nav>
+    <nav class="footer-links" aria-label="Idioma e ajuda"><span><a href="../extension-privacy.html">EN</a> | <strong>PT</strong></span><a href="help/">Ajuda</a></nav>
+  </div>
+</header>
+
+  <main class="policy-page">
+    <div class="container policy-container">
+      <a class="policy-back" href="index.html">← Series Organizer+</a>
+      <p class="section-label">PRIVACIDADE DO BROWSER WATCHING</p>
+      <h1>Privacidade da extensão Chrome</h1>
+      <p class="policy-updated">Última atualização: 13 de outubro de 2026</p>
+      <section>
+        <h2>Âmbito e finalidade</h2>
+        <p>Esta política abrange Series Organizer+ Browser Watching, a extensão Chrome da LastDay Software. Identifica títulos em serviços de streaming suportados e envia-os para revisão na Biblioteca da aplicação Desktop Windows, no mesmo computador. Registar uma visualização exige uma ação explícita tua no Desktop.</p>
+        <p>A extensão é opcional e não exige uma conta Series Organizer+. Não fornece conteúdo de streaming nem contorna subscrições. A <a href="privacy.html">política da aplicação</a> abrange separadamente contas, sincronização, backups e analytics opcionais no Android; a <a href="website-privacy.html">política do website</a> abrange os analytics deste site.</p>
+      </section>
+      <section>
+        <h2>Informação usada na deteção</h2>
+        <p>Nas páginas suportadas do Netflix, HBO Max, Prime Video, Apple TV e Disney+, a extensão lê texto relevante da página/do leitor: serviço, nomes de filmes, séries e episódios, números de temporada/episódio, etiquetas visíveis e contexto limitado. Usa a origem/caminho da página, o identificador do separador, o tempo/duração do vídeo e o estado de reprodução/pausa para distinguir o título atual, verificar a reprodução e evitar envios duplicados.</p>
+        <p>Não grava áudio ou vídeo, não lê o histórico através da API de histórico do navegador e não recolhe palavras-passe de streaming, cookies de autenticação, dados de pagamento nem mensagens pessoais. Não contém integrações de analytics nem publicidade.</p>
+      </section>
+      <section>
+        <h2>Permissões e escolhas</h2>
+        <ul>
+          <li><strong>activeTab e scripting:</strong> verificar a página suportada atual com o código incluído na extensão quando abres o popup. Páginas regionais Amazon reconhecidas de detalhe de vídeo também permitem inspeção manual, sem acesso Amazon permanente.</li>
+          <li><strong>Acesso opcional aos serviços:</strong> solicitado ao ativares a verificação com o popup fechado. Permite verificar páginas de streaming em segundo plano; desativar a opção remove essas autorizações.</li>
+          <li><strong>storage:</strong> guardar opções, informação de ligação local e estado temporário de deteção/envio.</li>
+          <li><strong>Acesso local:</strong> comunicar com o Desktop em <code>http://127.0.0.1:17837</code>, neste computador. A ligação tem de ser aprovada no Desktop.</li>
+        </ul>
+        <p>A verificação em segundo plano, o envio automático e a opção de ignorar títulos já vistos são separados e desativados por predefinição. O envio automático apenas entrega um título para revisão; não regista uma visualização sem confirmação no Desktop.</p>
+      </section>
+      <section>
+        <h2>Comunicação e armazenamento locais</h2>
+        <p>As mensagens normais incluem o serviço, títulos alternativos, detalhes disponíveis do episódio e informação de verificação/observação. Não incluem o URL da página nem posições de reprodução em bruto. São enviadas apenas para o Desktop associado localmente, não para um serviço cloud do programador.</p>
+        <p>O Desktop pode devolver se o título exato está visto e definições de apresentação/indicadores de episódios. Não envia a Biblioteca completa nem o histórico de visualizações. Tokens de sessão e chaves locais de reconexão autorizam a ligação; não são credenciais do serviço de streaming nem do Google.</p>
+        <p>O armazenamento de sessão do Chrome contém estado temporário de títulos, envio, resultados de visualização e ligação. O armazenamento local contém opções e informação de reconexão. Um identificador de ficheiro de diagnóstico selecionado pode ficar guardado localmente em IndexedDB. A extensão não usa a sincronização de armazenamento do Chrome.</p>
+        <p>O Desktop mantém os títulos aceites até os registares ou removeres. Visualizações confirmadas tornam-se dados de acompanhamento da aplicação: se ativares separadamente a sincronização da conta ou solicitares Cloud Backup, seguem a política da aplicação. O estado de deteção e a lista de títulos pendentes não são enviados num backup cloud.</p>
+      </section>
+      <section>
+        <h2>Diagnósticos e suporte opcionais</h2>
+        <p>As ferramentas de desenvolvimento podem mostrar um relatório local ou acrescentá-lo a um ficheiro que escolhas. Os relatórios podem incluir origem/caminho da página, títulos, posições do leitor, etiquetas, contexto DOM limitado, datas e estado de correspondência/ligação. Não são enviados automaticamente.</p>
+        <p>Revê e oculta informação privada antes de partilhar relatórios. Não envies palavras-passe, tokens, cookies nem dados da conta do serviço. Se decidires enviar um relatório ao suporte, a LastDay Software recebe apenas o que partilhas e conserva a correspondência pelo tempo razoavelmente necessário para tratar o pedido.</p>
+      </section>
+      <section>
+        <h2>Conservação e remoção</h2>
+        <p>O estado de sessão de cada separador é limpo quando o separador fecha; o armazenamento de sessão do Chrome é limpo no fim da sessão do navegador. Opções e informação de reconexão ficam locais até limpares o armazenamento da extensão ou a removeres. Mudar de perfil no Desktop ou desativar Browser Watching invalida a aprovação da ligação.</p>
+        <p>Desativar a verificação em segundo plano não elimina entradas pendentes nem o histórico no Desktop. Remove as entradas pendentes no Desktop. Desinstalar a extensão não elimina dados do Desktop nem ficheiros de diagnóstico guardados separadamente; elimina esses ficheiros quando deixarem de ser necessários.</p>
+      </section>
+      <section>
+        <h2>Utilização Limitada da Chrome Web Store</h2>
+        <p>A utilização de informação recebida através das APIs do Chrome pelo Series Organizer+ Browser Watching respeita a Política de Dados do Utilizador da Chrome Web Store, incluindo os requisitos de Utilização Limitada. Os dados são usados apenas nas funcionalidades descritas e para suporte/segurança necessários; nunca são vendidos nem usados para publicidade ou decisões de crédito.</p>
+        <p>Não transferimos dados da extensão para terceiros para finalidades não relacionadas. O acesso de suporte limita-se à informação que escolhas partilhar explicitamente.</p>
+      </section>
+      <section>
+        <h2>Contacto</h2>
+        <p>Questões de privacidade: <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>. Configuração ou problemas: <a href="mailto:support@seriesorganizer.com">support@seriesorganizer.com</a>.</p>
+        <p><a href="../guides/browser-watching.html" hreflang="en">Guia de Browser Watching (em inglês)</a> · <a href="help/">Ajuda e guias</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <img src="../assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+        <div>
+          <strong>Series Organizer+</strong>
+          <small>Filmes e TV, organizados.</small>
+        </div>
+      </div>
+      <p>Um projeto LastDay Software.</p>
+      <p class="tmdb-attribution">
+        Este produto utiliza a API do TMDB, mas não é aprovado nem certificado pelo TMDB.
+        <a href="https://www.themoviedb.org/">Visitar TMDB</a>.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Navegação de rodapé">
+      <a href="privacy.html">Privacidade</a>
+      <a href="website-privacy.html">Privacidade do site</a>
+      <a href="account-deletion.html">Eliminação da conta</a>
+      <a href="support.html">Suporte</a>
+      <a href="help/">Ajuda</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="styles.css" />
 <link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="feed.xml" />
   <title>Privacy Policy — Series Organizer+</title>
-  <meta name="description" content="Privacy Policy for Series Organizer+, an Android app by LastDay Software." />
+  <meta name="description" content="Privacy policy for Series Organizer+ on Android and Windows, including Browser Watching." />
   <link rel="canonical" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/privacy.html" />
   <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/privacy.html" />
@@ -42,12 +42,12 @@
       <a class="policy-back" href="index.html">← Series Organizer+</a>
       <p class="section-label">PRIVACY</p>
       <h1>Privacy Policy</h1>
-      <p class="policy-updated">Last updated: October 6, 2026</p>
+      <p class="policy-updated">Last updated: October 13, 2026</p>
 
       <section>
         <h2>About this policy</h2>
         <p>
-          Series Organizer+ is an Android application by LastDay Software for organizing
+          Series Organizer+ is an Android and Windows application by LastDay Software for organizing
           and tracking movies and TV shows. It is local-first and works without an account.
         </p>
       </section>
@@ -81,7 +81,8 @@
         </p>
         <p>
           Authentication tokens are stored locally using Android Keystore-backed encryption
-          and are excluded from Android backup.
+          on Android and Windows Data Protection on Desktop. They are excluded from app
+          cloud backups and Android system backup.
         </p>
       </section>
 
@@ -97,7 +98,7 @@
         <p>
           Sync also stores account identifiers and operation/revision information needed
           to apply changes and retry safely. You can run sync manually or enable optional
-          scheduled checks when the app enters the foreground. It does not imply
+          checks while Desktop is open (including in the tray) or Android is in the foreground. It does not imply
           continuous synchronization while the app is closed. Initial differences may
           require your review before sync is enabled.
         </p>
@@ -105,6 +106,8 @@
           Disabling automatic checks stops those checks; it does not delete data already
           stored in the cloud. TMDB metadata, artwork, authentication tokens and device-wide
           preferences are not part of the Library records sent by account sync.
+          Supported portable preferences are synchronized separately, including
+          languages, theme, presentation, Library options, region and services.
         </p>
       </section>
 
@@ -125,13 +128,15 @@
           <li>Viewing activity, including viewing dates and rewatches</li>
         </ul>
 
+        <p>Current backups also include supported portable profile preferences, such as
+          languages, theme, presentation, Library options, region and streaming services.</p>
         <p>Cloud backups exclude:</p>
         <ul>
           <li>TMDB metadata and caches</li>
           <li>Person data</li>
           <li>Posters and other artwork</li>
           <li>Analytics preferences</li>
-          <li>General app/device preferences</li>
+          <li>Device-only preferences, local paths, pairing and automatic schedules</li>
           <li>Notification permissions and schedules</li>
           <li>Authentication tokens</li>
         </ul>
@@ -143,9 +148,9 @@
       </section>
 
       <section>
-        <h2>Optional Firebase Analytics</h2>
+        <h2>Optional Android Firebase Analytics</h2>
         <p>
-          Firebase Analytics is disabled by default and is enabled only through explicit
+          Android Firebase Analytics is disabled by default and is enabled only through explicit
           user opt-in.
         </p>
 
@@ -168,6 +173,20 @@
           analytics collection; it does not itself erase information collected earlier.
           Analytics uses an app-instance identifier, not your Series Organizer+ account ID.
         </p>
+      </section>
+
+      <section>
+        <h2>Optional Browser Watching companion</h2>
+        <p>The optional <a href="extension-privacy.html">Browser Watching Chrome companion</a>
+          reads relevant supported page/player text and playback state and sends detected
+          titles to the paired Desktop app on this computer for explicit watch confirmation.
+          It has no analytics or advertising integration. Background checks and automatic
+          sending are separate opt-in choices.</p>
+        <p>Its use of information received through Chrome APIs adheres to the Chrome Web Store
+          User Data Policy, including the Limited Use requirements. Data is used only for
+          Browser Watching and necessary support/security purposes, never sold or used for
+          advertising or creditworthiness decisions. The linked companion policy covers
+          permissions, local pairing/storage, diagnostics and removal.</p>
       </section>
 
       <section>

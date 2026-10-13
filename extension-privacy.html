@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#111111" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/icon_master.svg" />
+<link rel="alternate icon" type="image/png" href="assets/brand/icon_play_store_512.png" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="alternate" type="application/rss+xml" title="Series Organizer+ News" href="feed.xml" />
+  <title>Chrome companion privacy — Series Organizer+</title>
+  <meta name="description" content="How Series Organizer+ Browser Watching handles local detection, pairing and diagnostic data." />
+  <link rel="canonical" href="https://seriesorganizer.com/extension-privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://seriesorganizer.com/extension-privacy.html" />
+  <link rel="alternate" hreflang="pt-PT" href="https://seriesorganizer.com/pt/extension-privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://seriesorganizer.com/extension-privacy.html" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Series Organizer+ home">
+      <img class="brand-icon" src="assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+      <div class="brand-text">
+        <strong>Series Organizer+</strong>
+        <small>Movies &amp; TV, organized.</small>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#discover">Discover</a>
+      <a href="news/">News</a>
+      <a href="help/">Help</a>
+      <a href="index.html#legacy">Our story</a>
+      <a href="index.html#development">What's next</a>
+    </nav>
+    <nav class="footer-links" aria-label="Language and help"><span><strong>EN</strong> | <a href="pt/extension-privacy.html">PT</a></span><a href="help/">Help</a></nav>
+  </div>
+</header>
+
+  <main class="policy-page">
+    <div class="container policy-container">
+      <a class="policy-back" href="index.html">← Series Organizer+</a>
+      <p class="section-label">BROWSER WATCHING PRIVACY</p>
+      <h1>Chrome companion privacy</h1>
+      <p class="policy-updated">Last updated: October 13, 2026</p>
+      <section>
+        <h2>Scope and purpose</h2>
+        <p>This policy covers Series Organizer+ Browser Watching, the Chrome companion by LastDay Software. It identifies supported streaming titles and sends them to the Series Organizer+ Windows Desktop app on the same computer for Library review. Recording a watch requires your explicit action in Desktop.</p>
+        <p>The extension is optional and needs no Series Organizer+ account. It does not provide streaming content or bypass a provider's subscription. The <a href="privacy.html">app privacy policy</a> separately covers Desktop/Android accounts, sync, backups and optional Android analytics; the <a href="website-privacy.html">website policy</a> covers this site's analytics.</p>
+      </section>
+      <section>
+        <h2>Information used for detection</h2>
+        <p>On supported Netflix, HBO Max, Prime Video, Apple TV and Disney+ pages, the extension reads relevant page/player text: provider, movie/show and episode names, season/episode numbers, visible labels and limited page context. It uses the page origin/path, tab identity, player time/duration and playing/paused state to distinguish the current title, verify advancing playback and prevent duplicate offers.</p>
+        <p>It does not record audio or video, read your browser history through the history API, or collect streaming passwords, authentication cookies, payment details or personal messages. It has no extension analytics or advertising integration.</p>
+      </section>
+      <section>
+        <h2>Permissions and your choices</h2>
+        <ul>
+          <li><strong>activeTab and scripting:</strong> inspect the current supported page with bundled player readers when you open the popup. Recognized regional Amazon video-detail pages also support explicit manual inspection without persistent Amazon access.</li>
+          <li><strong>Optional provider access:</strong> requested when you enable Check while the popup is closed. It allows background inspection of supported streaming pages; switching this option off removes those provider grants.</li>
+          <li><strong>storage:</strong> save options, local pairing information and temporary detection/delivery state.</li>
+          <li><strong>Localhost access:</strong> connect to the Desktop bridge at <code>http://127.0.0.1:17837</code> on this computer. Pairing must be approved in Desktop.</li>
+        </ul>
+        <p>Background checking, automatic sending and skipping already-seen titles are separate, default-off options. Automatic sending only delivers a title for review; it cannot record a watch without your Desktop confirmation.</p>
+      </section>
+      <section>
+        <h2>Local communication and storage</h2>
+        <p>Ordinary title messages contain the provider, title alternatives, available episode details and verification/observation information. They do not contain the page URL or raw playback positions. The extension sends these messages only to the locally paired Desktop app, not to a developer cloud endpoint.</p>
+        <p>Desktop can return an exact title's yes/no watched status and shared display/episode-marker settings. It does not send the extension your full Library or watch history. Session authorization tokens and locally generated reconnect keys secure pairing; these are not your streaming or Google credentials.</p>
+        <p>Chrome session storage holds temporary title, delivery, watched-result and connection state. Chrome local storage holds options and reconnect information. A selected diagnostic-file handle may be retained locally in IndexedDB. The extension does not use Chrome storage sync.</p>
+        <p>Desktop retains accepted entries until you record or remove them. Confirmed watches become app-owned tracking data: if you separately enable account sync or request Cloud Backup, that resulting tracking data follows the app privacy policy. The extension's detection state and pending inbox are not uploaded as a cloud backup.</p>
+      </section>
+      <section>
+        <h2>Optional diagnostics and support</h2>
+        <p>Developer tools can show a local diagnostic report or append one to a file you select. Reports may contain page origin/path, titles, player positions, labels, limited DOM context, timestamps and matching/connection state. They are not uploaded automatically.</p>
+        <p>Review and redact reports before sharing them. Do not send passwords, tokens, cookies or provider account details. If you choose to send a report to support, LastDay Software receives only what you share and retains correspondence as reasonably necessary to handle the request.</p>
+      </section>
+      <section>
+        <h2>Retention and removal</h2>
+        <p>Per-tab session state is cleared when the tab closes; Chrome session storage is cleared when the browser session ends. Options and reconnect information remain locally until extension storage is cleared or the extension is removed. Switching Desktop profiles or disabling Browser Watching invalidates its pairing approval.</p>
+        <p>Turning background checks off does not erase existing Desktop inbox entries or watch history. Remove pending entries in Desktop. Uninstalling the extension does not delete Desktop data or diagnostic files you saved separately; delete those files yourself when no longer needed.</p>
+      </section>
+      <section>
+        <h2>Chrome Web Store Limited Use</h2>
+        <p>Series Organizer+ Browser Watching's use of information received through Chrome APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data is used only for its stated Browser Watching features and necessary support/security purposes, never sold or used for advertising or creditworthiness decisions.</p>
+        <p>We do not transfer extension data to third parties for unrelated purposes. Any support access is limited to information you explicitly choose to share.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Privacy questions: <a href="mailto:privacy@seriesorganizer.com">privacy@seriesorganizer.com</a>. Setup or troubleshooting: <a href="mailto:support@seriesorganizer.com">support@seriesorganizer.com</a>.</p>
+        <p><a href="guides/browser-watching.html">Browser Watching guide</a> · <a href="help/">Help and guides</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-row">
+        <img src="assets/brand/series-organizer-plus-mark-dark.svg" alt="" />
+        <div>
+          <strong>Series Organizer+</strong>
+          <small>Movies &amp; TV, organized.</small>
+        </div>
+      </div>
+      <p>A LastDay Software project.</p>
+      <p class="tmdb-attribution">
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
+        <a href="https://www.themoviedb.org/">Visit TMDB</a>.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="privacy.html">Privacy</a>
+      <a href="website-privacy.html">Website Privacy</a>
+      <a href="account-deletion.html">Account deletion</a>
+      <a href="support.html">Support</a>
+      <a href="help/">Help</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
