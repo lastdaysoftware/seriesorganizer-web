@@ -17,7 +17,7 @@ Browse and For You now skip titles you already own in your Library; Search still
 
 The Windows installer includes a companion Chrome extension for Netflix, HBO Max, Prime Video, Apple TV and Disney+. Pair it with Desktop on the same computer, send a detected title and review the match before recording a watch. Streaming or sending alone never marks anything seen.
 
-The extension is not yet in the Chrome Web Store. For now, load the installed copy manually using the [installation and pairing instructions](https://seriesorganizer.com/guides/browser-watching-installation.html). The [Browser Watching guide](https://seriesorganizer.com/guides/browser-watching.html) covers sending, review, options, badges and troubleshooting.
+**Update — 14 October 2026:** The companion is now published in the [Chrome Web Store](https://chromewebstore.google.com/detail/ibcefjobpcadamdkbjhjgadakbmbpmob). Store installation is the recommended route; the bundled copy remains a manual fallback. The [installation and pairing instructions](https://seriesorganizer.com/guides/browser-watching-installation.html) also cover switching from an unpacked copy. The [Browser Watching guide](https://seriesorganizer.com/guides/browser-watching.html) covers sending, review, options, badges and troubleshooting.
 
 ## Less friction, stronger recovery
 

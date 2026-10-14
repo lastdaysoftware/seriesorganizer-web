@@ -69,3 +69,11 @@ The build script updates `news/index.html`, `news/posts/*.html`, `feed.xml`, and
 Comments use Giscus backed by the repository's GitHub Discussions `Announcements` category. Each article maps to its own discussion by URL pathname.
 
 News articles are English-only for now. The Portuguese navigation links to the same News section.
+
+## Chrome companion publication
+
+- Published Store listing (14 October 2026): https://chromewebstore.google.com/detail/ibcefjobpcadamdkbjhjgadakbmbpmob
+- Recommend Store installation on the homepage and Help pages. Keep the bundled unpacked copy as a manual fallback in the installation guide.
+- Switching copies requires a fresh local pairing and re-selecting extension options; users should keep only one copy active.
+- Deferred to the next Desktop MSI patch: add localized Chrome Web Store and installation-guide links to the Desktop Browser Watching setup/help entry points and installer-supplied guide. Inspect the app source and reuse its existing external-link controls at that time.
+- Do not rebuild or replace the public 2.1.0 MSI for this website-only update.

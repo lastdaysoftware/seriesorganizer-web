@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://seriesorganizer.com/guides/browser-watching-installation.html"><title>Install or update the bundled Browser Watching extension — Series Organizer+</title><style>:root{color-scheme:dark;--bg:#1e1e1e;--panel:#282828;--text:#f9f7f2;--muted:#c7c2bc;--accent:#ffae4d}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://seriesorganizer.com/guides/browser-watching-installation.html"><title>Install and pair the Browser Watching extension — Series Organizer+</title><style>:root{color-scheme:dark;--bg:#1e1e1e;--panel:#282828;--text:#f9f7f2;--muted:#c7c2bc;--accent:#ffae4d}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:18px/1.65 "Segoe UI",Arial,sans-serif}
 main{max-width:1080px;margin:auto;padding:42px 52px 80px}h1{font-size:40px;line-height:1.2;letter-spacing:-.8px;margin:16px 0 24px}
 h2{font-size:28px;line-height:1.3;margin:58px 0 22px;border-top:1px solid #ffffff20;padding-top:28px;scroll-margin-top:25px}
@@ -14,9 +14,31 @@ th,td{border:1px solid #ffffff25;text-align:left;vertical-align:top;padding:13px
 td .image-link{margin:0 auto;min-width:38px}td img{max-width:38px;border-radius:0;box-shadow:none}.table-wrap{overflow:auto}
 .footer{margin-top:55px;padding-top:22px;border-top:1px solid #ffffff20;color:var(--muted);font-size:15px}.kicker{font-size:14px;letter-spacing:1.5px;color:var(--accent)}
 @media(max-width:700px){main{padding:22px 20px 45px}body{font-size:17px}h1{font-size:30px}h2{font-size:25px}nav ul{grid-template-columns:1fr}th,td{padding:10px;font-size:15px}code{font-size:13px}}
-@media print{body{background:white;color:#222}main{max-width:none;padding:0}h1,h2,h3,strong{color:#111}nav{display:none}a{color:#333}.kicker{color:#555}th,td{background:white;border-color:#bbb}img{box-shadow:none}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><main><p><a href="../index.html">← Series Organizer+ website</a> · <a href="../help/">Help and guides</a></p><div class="kicker">SERIES ORGANIZER+ · WINDOWS DESKTOP AND CHROME</div><h1 id="install-or-update-the-unpacked-browser-watching-test-extension">Install or update the bundled Browser Watching extension</h1>
-<p>The companion extension is currently supplied with the Windows installer rather than through the Chrome Web Store. Installing the Series Organizer+ Desktop MSI supplies its files but does not install or enable them in Chrome.</p>
-<nav aria-label="Contents"><strong>In this guide</strong><ul><li><a href="#install-the-extension">Install the extension</a></li><li><a href="#update-an-installed-test-copy">Update an installed copy</a></li></ul></nav><h2 id="install-the-extension">Install the extension</h2>
+@media print{body{background:white;color:#222}main{max-width:none;padding:0}h1,h2,h3,strong{color:#111}nav{display:none}a{color:#333}.kicker{color:#555}th,td{background:white;border-color:#bbb}img{box-shadow:none}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><main><p><a href="../index.html">← Series Organizer+ website</a> · <a href="../help/">Help and guides</a></p><div class="kicker">SERIES ORGANIZER+ · WINDOWS DESKTOP AND CHROME</div><h1 id="install-or-update-the-unpacked-browser-watching-test-extension">Install and pair the Browser Watching extension</h1>
+<p>The recommended way to install <strong>Series Organizer+ Browser Watching</strong> is through the <a href="https://chromewebstore.google.com/detail/ibcefjobpcadamdkbjhjgadakbmbpmob">Chrome Web Store</a>. You need Chrome and Series Organizer+ Desktop on the same Windows computer. Installing Desktop does not install or enable the extension automatically.</p>
+<nav aria-label="Contents"><strong>In this guide</strong><ul><li><a href="#install-the-extension">Install from the Chrome Web Store</a></li><li><a href="#switch-from-the-bundled-copy">Switch from the bundled copy</a></li><li><a href="#store-updates">Store updates</a></li><li><a href="#manual-installation">Manual installation fallback</a></li><li><a href="#update-an-installed-test-copy">Update a manual copy</a></li></ul></nav>
+<h2 id="install-the-extension">Install from the Chrome Web Store</h2>
+<ol>
+<li>Install and open <a href="../index.html#download">Series Organizer+ Desktop</a>.</li>
+<li>Open the <a href="https://chromewebstore.google.com/detail/ibcefjobpcadamdkbjhjgadakbmbpmob">official Series Organizer+ Browser Watching listing</a> in Chrome on that computer.</li>
+<li>Select <strong>Add to Chrome</strong>, review the permissions and confirm with <strong>Add extension</strong>.</li>
+<li>From Chrome's Extensions menu, pin <strong>Series Organizer+ Browser Watching</strong> if you want its badge to stay visible.</li>
+<li>Follow <a href="browser-watching.html#set-up-browser-watching">Set up Browser Watching</a> to enable the Desktop feature and approve local pairing.</li>
+</ol>
+<p>The Store version does not need <strong>Developer mode</strong> or <strong>Load unpacked</strong>. Installation follows <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en">Chrome's official extension instructions</a>. Nothing is marked as seen until you confirm the watch in Desktop.</p>
+<h2 id="switch-from-the-bundled-copy">Switch from the bundled copy</h2>
+<p>If you previously used <strong>Load unpacked</strong>, switch to the Store version rather than running both copies.</p>
+<ol>
+<li>Note your existing extension options. Open <code>chrome://extensions</code> and remove the manually loaded <strong>Series Organizer+ Browser Watching</strong> copy.</li>
+<li>Install from the <a href="https://chromewebstore.google.com/detail/ibcefjobpcadamdkbjhjgadakbmbpmob">Chrome Web Store</a> using the steps above.</li>
+<li>Connect the Store copy to Desktop and approve pairing again. Re-select your optional background-check and automatic-send settings; do not assume the old copy's pairing or options carry over.</li>
+<li>Refresh streaming tabs that were already open, then send a detected title and check the match in Desktop.</li>
+</ol>
+<p>Removing the Chrome extension does not remove your Desktop Library or watch history. Keep only one copy active to avoid duplicate detections or confusing badges.</p>
+<h2 id="store-updates">Store updates</h2>
+<p>The Store version uses Chrome's extension update mechanism, separately from Desktop MSI updates. After an extension update, refresh already-open streaming pages and check the popup if detection looks stale. A Desktop update does not require loading or reloading the bundled copy when you use the Store version.</p>
+<h2 id="manual-installation">Manual installation fallback</h2>
+<p>The Windows installer still supplies an unpacked copy for manual installation. Use this only as an alternative to the Store copy, not alongside it.</p>
 <ol>
 <li><p>Install and open Series Organizer+ Desktop.</p>
 </li>
@@ -34,7 +56,7 @@ td .image-link{margin:0 auto;min-width:38px}td img{max-width:38px;border-radius:
 </li>
 </ol>
 <p>These steps follow <a href="https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked">Chrome&#39;s official unpacked-extension instructions</a>.</p>
-<h2 id="update-an-installed-test-copy">Update an installed copy</h2>
+<h2 id="update-an-installed-test-copy">Update a manually installed copy</h2>
 <ol>
 <li>Install the newer Desktop MSI.</li>
 <li>Return to <code>chrome://extensions</code>.</li>
