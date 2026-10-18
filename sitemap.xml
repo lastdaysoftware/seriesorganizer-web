@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://seriesorganizer.com/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/privacy.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://seriesorganizer.com/pt/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/pt/privacy.html</loc>
@@ -79,7 +79,11 @@
   <!-- NEWS:START -->
   <url>
     <loc>https://seriesorganizer.com/news/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://seriesorganizer.com/news/posts/series-organizer-plus-android-google-play.html</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://seriesorganizer.com/news/posts/series-organizer-plus-2-1-0.html</loc>

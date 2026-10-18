@@ -28,9 +28,9 @@ Current app screenshots are under `assets/screenshots/`.
 
 Historical Series Organizer screenshots are under `assets/history/`.
 
-## Publication checklist still open
+## Publication and maintenance checks
 
-Before Google Play / OAuth publication:
+When updating the app listings, account flows or privacy pages:
 
 1. Complete and test the authenticated in-app account-deletion workflow.
 2. Confirm the Google Play target-audience selections match the published children wording.
@@ -39,6 +39,13 @@ Before Google Play / OAuth publication:
 5. Verify `privacy.html`, `support.html`, and `account-deletion.html` open directly after deployment.
 
 The site remains static. JavaScript is limited to approved integrations such as website analytics/consent and Giscus comments on News articles.
+
+## Android Google Play availability
+
+- Public listing confirmed on 18 October 2026: https://play.google.com/store/apps/details?id=com.lastdaysoftware.seriesorganizer
+- Recommend Google Play installation on the English and Portuguese homepages and Help pages. Android requires Android 10 or later; availability depends on device and region.
+- Keep the Windows 2.1.0 installer, file size and SHA-256 checksum unchanged for this website-only launch update.
+- The 18 October News/RSS announcement records the Android launch. Older release posts retain their historical dates and may describe earlier testing status.
 
 
 ## Production deployment

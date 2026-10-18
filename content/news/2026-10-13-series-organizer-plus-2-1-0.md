@@ -7,6 +7,8 @@ summary: Windows 2.1.0 is available, with Library and Up Next grids, shared filt
 
 Series Organizer+ 2.1.0 is available for Windows. This release brings together the work since the public 1.1.0 update: new views, more useful filters, Browser Watching and stronger syncing. [Download the Windows installer](https://downloads.seriesorganizer.com/Series%20Organizer%20Plus-2.1.0.msi), or visit the [official download section](https://seriesorganizer.com/#download) for its size and SHA-256 checksum. The refreshed Android app remains in Google Play Internal testing, not public release.
 
+**Update — 18 October 2026:** Android is now publicly available on [Google Play](https://play.google.com/store/apps/details?id=com.lastdaysoftware.seriesorganizer). Read the [Android launch announcement](https://seriesorganizer.com/news/posts/series-organizer-plus-android-google-play.html) for installation and getting-started information. References to internal testing below describe the status when this Windows release post was first published.
+
 ## Choose the view that fits
 
 Library and Discover gain poster grids alongside their Detailed views. Up Next has compact cards with progress and the episode or movie date when available. The new filters make it easier to combine media type, favorites, archive and dates, with Your services available for your own Library titles on Library, Up Next and Calendar.
